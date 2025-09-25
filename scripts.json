@@ -1,8 +1,8 @@
 [
   {
-    "domain": "example1.com",
-    "icon": "https://via.placeholder.com/64",
-    "url": "https://example.com/script1.user.js"
+    "domain": "lrt.lt",
+    "icon": "https://www.lrt.lt/images/favicons/favicon-512x512.png?v=271",
+    "url": "scripts/cite-web-lrt.user.js"
   },
   {
     "domain": "example2.com",
