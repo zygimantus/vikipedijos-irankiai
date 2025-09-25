@@ -1,21 +1,26 @@
 fetch('scripts.json')
-  .then(res => res.json())
+  .then(r => r.json())
   .then(data => {
-    const gallery = document.getElementById('gallery');
-    gallery.innerHTML = ''; // clear placeholder
+    const g = document.getElementById('gallery');
+    g.innerHTML = '';
     data.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
+      const c = document.createElement('div');
+      c.className = 'card';
+      c.innerHTML = `
         <a href="${item.url}" target="_blank">
           <img src="${item.icon}" alt="${item.label}">
           <span>${item.label}</span>
-        </a>
-      `;
-      gallery.appendChild(card);
+        </a>`;
+      const img = c.querySelector('img');
+      img.onerror = () => {
+        const f = document.createElement('div');
+        f.className = 'img-fallback';
+        f.textContent = (img.alt || '?')[0].toUpperCase();
+        img.replaceWith(f);
+      };
+      g.appendChild(c);
     });
   })
-  .catch(err => {
-    console.error('Error loading scripts.json:', err);
-    document.getElementById('gallery').innerHTML = '<p>Failed to load gallery.</p>';
+  .catch(() => {
+    document.getElementById('gallery').textContent = '⚠️ Failed to load gallery.';
   });

@@ -5,15 +5,6 @@ body {
   padding: 1rem;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-main {
-  margin-bottom: 1rem;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -29,20 +20,20 @@ main {
   width: 120px;
 }
 
-.card img {
+.card img,
+.img-fallback {
   width: 64px;
   height: 64px;
-  display: block;
   margin: 0 auto;
-}
-
-.card span {
   display: block;
-  margin-top: 0.3rem;
-  font-size: 0.9rem;
+  object-fit: contain;
 }
 
-footer.coffee {
-  text-align: center;
-  margin-top: 2rem;
+.img-fallback {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 32px sans-serif;
+  color: #555;
 }
