@@ -1,17 +1,17 @@
 [
   {
     "domain": "lrt.lt",
-    "icon": "https://www.lrt.lt/images/favicons/favicon-512x512.png?v=271",
+    "icon": "https://www.lrt.lt/favicon.ico",
     "url": "scripts/cite-web-lrt.user.js"
   },
   {
-    "domain": "example2.com",
-    "icon": "https://via.placeholder.com/64",
-    "url": "https://example.com/script2.user.js"
+    "domain": "delfi.lt",
+    "icon": "https://www.delfi.lt/favicon.ico",
+    "url": "scripts/cite-web-delfi.user.js"
   },
   {
-    "domain": "example3.com",
-    "icon": "https://via.placeholder.com/64",
-    "url": "https://example.com/script3.user.js"
+    "domain": "15min.lt",
+    "icon": "https://www.15min.lt/favicon.ico",
+    "url": "scripts/cite-web-15min.user.js"
   }
 ]
