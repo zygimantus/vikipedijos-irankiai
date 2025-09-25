@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  margin-top: 2rem;
+}
+
+.coffee {
+  margin-top: 2rem;
+}

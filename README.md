@@ -1,6 +1,6 @@
 # Vikipedijos Įrankiai
 
-Darbui su lietuviškąja  Vikipedija skirti įrankiai.
+Darbui su lietuviškąja Vikipedija skirti įrankiai.
 
 ## Install
 
@@ -11,6 +11,10 @@ Darbui su lietuviškąja  Vikipedija skirti įrankiai.
 
 ```
 ```
+
+## Support
+
+Jeigu įrankiai naudingi, galite mane paremti platformoje [„Buy Me a Coffee“](https://buymeacoffee.com/zygimantus).
 
 ## License
 
