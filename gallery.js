@@ -8,8 +8,7 @@ fetch('scripts.json')
       c.className = 'card';
       c.innerHTML = `
         <a href="${item.url}" target="_blank">
-          <img src="${item.icon}" alt="${item.label}">
-          <span>${item.label}</span>
+          <img src="${item.icon}" alt="${item.domain}">
         </a>`;
       const img = c.querySelector('img');
       img.onerror = () => {

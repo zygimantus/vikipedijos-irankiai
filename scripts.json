@@ -1,16 +1,16 @@
 [
   {
-    "label": "example1.com",
+    "domain": "example1.com",
     "icon": "https://via.placeholder.com/64",
     "url": "https://example.com/script1.user.js"
   },
   {
-    "label": "example2.com",
+    "domain": "example2.com",
     "icon": "https://via.placeholder.com/64",
     "url": "https://example.com/script2.user.js"
   },
   {
-    "label": "example3.com",
+    "domain": "example3.com",
     "icon": "https://via.placeholder.com/64",
     "url": "https://example.com/script3.user.js"
   }

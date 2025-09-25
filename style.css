@@ -2,6 +2,21 @@ body {
   margin: 0;
   font-family: sans-serif;
   background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   padding: 1rem;
 }
 
@@ -9,6 +24,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .card {
