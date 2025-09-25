@@ -1,18 +1,23 @@
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
   font-family: sans-serif;
-  padding: 2rem;
   background: #f9f9f9;
+}
+
+header {
+  padding: 2rem;
   text-align: center;
 }
 
-h1 {
-  margin-bottom: 1rem;
+main {
+  flex: 1;
+  padding: 2rem;
 }
 
-.gallery {
-  margin-top: 2rem;
-}
-
-.coffee {
-  margin-top: 2rem;
+footer.coffee {
+  padding: 1rem;
+  text-align: center;
 }
