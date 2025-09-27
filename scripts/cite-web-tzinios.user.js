@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        LRT.LT Citation Generator for Wikipedia
+// @name        TZINIOS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from lrt.lt articles
-// @match       https://lrt.lt/*
-// @match       https://www.lrt.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from tzinios.lt articles
+// @match       https://tzinios.lt/*
+// @match       https://www.tzinios.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.lrt.lt/favicon.ico
+// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-tzinios.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-tzinios.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -138,15 +138,38 @@ function normalizeAgency(agency) {
   return '';
 }
 
+const months = {
+  'sausio': '01',
+  'vasario': '02',
+  'kovo': '03',
+  'balandžio': '04',
+  'gegužės': '05',
+  'birželio': '06',
+  'liepos': '07',
+  'rugpjūčio': '08',
+  'rugsėjo': '09',
+  'spalio': '10',
+  'lapkričio': '11',
+  'gruodžio': '12'
+};
+
 generate({
-  title: '.title-block__heading',
-  date: '.info-block__text',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.author-info span',
-  agency: '.article-source__description',
-  publisher: '[[LRT]]',
-  website: 'lrt.lt',
-  refName: 'lrt'
+  title: '.jeg_post_title',
+  date: '.jeg_meta_date',
+  dateFormat: raw => {
+    if (!raw) return raw;
+    const date = raw.replace(',', '').trim();
+    const parts = date.split(/\s+/);
+    if (parts.length === 3) {
+      const [day, monthLt, year] = parts;
+      const month = months[monthLt.toLowerCase()] || '??';
+      return `${year}-${month}-${day.padStart(2, '0')}`;
+    }
+    return raw;
+  },
+  publisher: '[[Telšių žinios]]',
+  website: 'tzinios.lt',
+  refName: 'tzinios'
 });
 
 })();

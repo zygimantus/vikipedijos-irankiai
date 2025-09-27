@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        LRT.LT Citation Generator for Wikipedia
+// @name        LRYTAS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from lrt.lt articles
-// @match       https://lrt.lt/*
-// @match       https://www.lrt.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from lrytas.lt articles
+// @match       https://lrytas.lt/*
+// @match       https://www.lrytas.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.lrt.lt/favicon.ico
+// @icon        https://www.lrytas.lt/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrytas.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrytas.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -138,15 +138,42 @@ function normalizeAgency(agency) {
   return '';
 }
 
+const months = {
+  'sausio': '01',
+  'vasario': '02',
+  'kovo': '03',
+  'balandžio': '04',
+  'gegužės': '05',
+  'birželio': '06',
+  'liepos': '07',
+  'rugpjūčio': '08',
+  'rugsėjo': '09',
+  'spalio': '10',
+  'lapkričio': '11',
+  'gruodžio': '12'
+};
+
 generate({
-  title: '.title-block__heading',
-  date: '.info-block__text',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.author-info span',
+  title: '.text-2xl.lg\\:text-\\[34px\\].lg\\:leading-\\[46px\\].mb-4.lg\\:mb-8.text-black-custom',
+  date: '.text-sm.text-black-custom',
+  dateFormat: raw => {
+    let date = (raw || '').trim();
+    date = date.replace(/\d{1,2}:\d{2}$/, '');
+    date = date.replace(/[md]\./g, '');
+    date = date.trim();
+    const parts = date.split(/\s+/);
+    if (parts.length >= 3) {
+      const [year, monthLt, day] = [parts[0], parts[1], parts[2]];
+      const month = months[monthLt.toLowerCase()] || '??';
+      return `${year}-${month}-${day.padStart(2, '0')}`;
+    }
+    return raw;
+  },
+  author: '.text-base text-black-custom',
   agency: '.article-source__description',
-  publisher: '[[LRT]]',
-  website: 'lrt.lt',
-  refName: 'lrt'
+  publisher: '[[Lrytas]]',
+  website: 'lrytas.lt',
+  refName: 'lrytas'
 });
 
 })();

@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        LRT.LT Citation Generator for Wikipedia
+// @name        ALKAS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from lrt.lt articles
-// @match       https://lrt.lt/*
-// @match       https://www.lrt.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from alkas.lt articles
+// @match       https://alkas.lt/*
+// @match       https://www.alkas.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.lrt.lt/favicon.ico
+// @icon        https://www.alkas.lt/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alkas.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alkas.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -139,14 +139,14 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '.title-block__heading',
-  date: '.info-block__text',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.author-info span',
-  agency: '.article-source__description',
-  publisher: '[[LRT]]',
-  website: 'lrt.lt',
-  refName: 'lrt'
+  title: '.jeg_post_title',
+  date: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  },
+  dateFormat: d => d.split('T')[0],
+  website: 'alkas.lt',
+  refName: 'alkas'
 });
 
 })();

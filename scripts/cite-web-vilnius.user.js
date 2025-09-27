@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        LRT.LT Citation Generator for Wikipedia
+// @name        VILNIUS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from lrt.lt articles
-// @match       https://lrt.lt/*
-// @match       https://www.lrt.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from vilnius.lt articles
+// @match       https://vilnius.lt/*
+// @match       https://www.vilnius.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.lrt.lt/favicon.ico
+// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vilnius.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vilnius.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -139,14 +139,10 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '.title-block__heading',
-  date: '.info-block__text',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.author-info span',
-  agency: '.article-source__description',
-  publisher: '[[LRT]]',
-  website: 'lrt.lt',
-  refName: 'lrt'
+  title: '.text-3xl.md\\:text-4xl.md\\:leading-\\[2\\.75rem\\].font-poppins.font-semibold.tracking-wide.text-black-light.w-full',
+  date: '.md\\:col-span-2 p',
+  website: 'vilnius.lt',
+  refName: 'vilnius'
 });
 
 })();

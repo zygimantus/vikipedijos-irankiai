@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        LRT.LT Citation Generator for Wikipedia
+// @name        ZMONES.15MIN.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from lrt.lt articles
-// @match       https://lrt.lt/*
-// @match       https://www.lrt.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from zmones.15min.lt articles
+// @match       https://zmones.15min.lt/*
+// @match       https://www.zmones.15min.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.lrt.lt/favicon.ico
+// @icon        https://www.zmones.15min.lt/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-zmones.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-zmones.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -139,14 +139,12 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '.title-block__heading',
-  date: '.info-block__text',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.author-info span',
-  agency: '.article-source__description',
-  publisher: '[[LRT]]',
-  website: 'lrt.lt',
-  refName: 'lrt'
+  title: () => document.querySelector('meta[property="og:title"]').getAttribute('content'),
+  date: '.text-12.text-\\[\\#4A4848\\] time',
+  dateFormat: d => d.split(' ')[0],
+  publisher: '[[Žmonės (žurnalas)|Žmonės]]',
+  website: 'zmones.15min.lt',
+  refName: 'zmones'
 });
 
 })();

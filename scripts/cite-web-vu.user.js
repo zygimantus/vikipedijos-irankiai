@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        LRT.LT Citation Generator for Wikipedia
+// @name        NAUJIENOS.VU.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from lrt.lt articles
-// @match       https://lrt.lt/*
-// @match       https://www.lrt.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from naujienos.vu.lt articles
+// @match       https://naujienos.vu.lt/*
+// @match       https://www.naujienos.vu.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.lrt.lt/favicon.ico
+// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vu.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vu.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -139,14 +139,21 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '.title-block__heading',
-  date: '.info-block__text',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.author-info span',
-  agency: '.article-source__description',
-  publisher: '[[LRT]]',
-  website: 'lrt.lt',
-  refName: 'lrt'
+  title: '.page-title',
+  date: () => {
+    const metaWrapper = document.querySelector('.page-meta-wrapper span');
+    // Get all text content inside (including text nodes)
+    const textNodes = Array.from(metaWrapper.childNodes).filter(node => node.nodeType === Node.TEXT_NODE) // only text nodes
+    .map(node => node.textContent.trim()) // trim whitespace
+    .filter(Boolean); // remove empty strings
+
+    // The date is usually the second text node (after author)
+    return textNodes[0];
+  },
+  dateFormat: date => (date == null ? void 0 : date.slice(0, 10)) || '',
+  publisher: '[[Vilniaus universitetas]]',
+  website: 'naujienos.vu.lt',
+  refName: 'vu'
 });
 
 })();
