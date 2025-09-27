@@ -36,7 +36,7 @@
   },
   {
     "domain": "zmones.15min.lt",
-    "icon": "https://www.zmones.15min.lt/favicon.ico",
+    "icon": "",
     "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-zmones.user.js"
   },
   {
@@ -76,17 +76,17 @@
   },
   {
     "domain": "zemaitis.lt",
-    "icon": "https://www.zemaitis.lt/favicon.ico",
+    "icon": "",
     "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-zemaitis.user.js"
   },
   {
     "domain": "anykstenai.lt",
-    "icon": "https://www.anykstenai.lt/favicon.ico",
+    "icon": "",
     "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-anykstenai.user.js"
   },
   {
     "domain": "jonavoszinios.lt",
-    "icon": "https://www.jonavoszinios.lt/favicon.ico",
+    "icon": "",
     "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-jonavoszinios.user.js"
   },
   {
@@ -131,7 +131,7 @@
   },
   {
     "domain": "darbs.lt",
-    "icon": "https://www.darbs.lt/favicon.ico",
+    "icon": "",
     "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-darbs.user.js"
   },
   {
