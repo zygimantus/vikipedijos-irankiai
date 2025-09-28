@@ -145,6 +145,16 @@
     "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alkas.user.js"
   },
   {
+    "domain": "grokiskis.lt",
+    "icon": "https://www.grokiskis.lt/favicon.ico",
+    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-grokiskis.user.js"
+  },
+  {
+    "domain": "santarve.lt",
+    "icon": "https://www.santarve.lt/favicon.ico",
+    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-santarve.user.js"
+  },
+  {
     "domain": "drg.lt",
     "icon": "https://www.drg.lt/templates/ja_good/favicon.ico",
     "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-draugas.user.js"
