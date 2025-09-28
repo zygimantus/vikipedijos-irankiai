@@ -23,7 +23,7 @@
 'use strict';
 
 const USE_REF_NAME_KEY = 'USE_REF_NAME';
-const CITE_WEB_REGEX = /^<ref(?:\s+name="[^"]*")?>\{\{cite web\s*((\|\s*[\w-]+\s*=\s*[^|}]+)+)\s*\}\}<\/ref>$/iu;
+const CITE_WEB_REGEX = /^<ref(?:\s+name="[^"]*")?>\{\{cite web\s*((?:\|\s*[\w-]+\s*=\s*[^]+?)+)\s*\}\}<\/ref>$/iu;
 async function getUseRefName() {
   const stored = await GM.getValue(USE_REF_NAME_KEY);
   if (stored === undefined) {

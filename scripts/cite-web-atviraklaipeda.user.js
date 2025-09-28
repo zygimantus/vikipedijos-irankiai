@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        KAUNO.DIENA.LT Citation Generator for Wikipedia
+// @name        ATVIRAKLAIPEDA.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from kauno.diena.lt articles
-// @match       https://kauno.diena.lt/*
-// @match       https://www.kauno.diena.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from atviraklaipeda.lt articles
+// @match       https://atviraklaipeda.lt/*
+// @match       https://www.atviraklaipeda.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://kauno.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/2/favicon-96x96.png
+// @icon        https://www.atviraklaipeda.lt/wp-content/themes/atviraklaipeda/assets/favicon.png
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kauno-diena.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kauno-diena.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-atviraklaipeda.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-atviraklaipeda.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -139,13 +139,22 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '#page-title span',
-  date: '.publishing-date',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.publishing-author a',
-  publisher: '[[Kauno diena]]',
-  website: 'kauno.diena.lt',
-  refName: 'kaunodiena'
+  title: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  },
+  date: () => {
+    var _document$querySelect2;
+    return (_document$querySelect2 = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
+  },
+  dateFormat: raw => raw.split('T')[0],
+  author: () => {
+    var _document$querySelect3;
+    return (_document$querySelect3 = document.querySelector('meta[name="author"]')) == null ? void 0 : _document$querySelect3.getAttribute('content');
+  },
+  publisher: 'Atvira Klaipėda',
+  website: 'atviraklaipeda.lt',
+  refName: 'atviraklaipeda'
 });
 
 })();

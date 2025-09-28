@@ -70,6 +70,11 @@
     "url": "scripts/cite-web-kasvyksta.user.js"
   },
   {
+    "domain": "atviraklaipeda.lt",
+    "icon": "https://www.atviraklaipeda.lt/wp-content/themes/atviraklaipeda/assets/favicon.png",
+    "url": "scripts/cite-web-atviraklaipeda.user.js"
+  },
+  {
     "domain": "laikrastisplunge.lt",
     "icon": "https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png",
     "url": "scripts/cite-web-plunge.user.js"
@@ -120,6 +125,11 @@
     "url": "scripts/cite-web-anyksta.user.js"
   },
   {
+    "domain": "gargzdai.lt",
+    "icon": "https://www.gargzdai.lt/favicon.ico",
+    "url": "scripts/cite-web-banga.user.js"
+  },
+  {
     "domain": "visalietuva.lt",
     "icon": "https://www.visalietuva.lt/favicon.ico",
     "url": "scripts/cite-web-visalietuva.user.js"
@@ -153,6 +163,21 @@
     "domain": "santarve.lt",
     "icon": "https://www.santarve.lt/favicon.ico",
     "url": "scripts/cite-web-santarve.user.js"
+  },
+  {
+    "domain": "suvalkietis.lt",
+    "icon": "",
+    "url": "scripts/cite-web-suvalkietis.user.js"
+  },
+  {
+    "domain": "biciulis.net",
+    "icon": "https://www.biciulis.net/favicon.ico",
+    "url": "scripts/cite-web-biciulis.user.js"
+  },
+  {
+    "domain": "kaisiadoriuaidai.lt",
+    "icon": "http://www.kaisiadoriuaidai.lt/images/favicon.ico",
+    "url": "scripts/cite-web-kaisiadoriuaidai.user.js"
   },
   {
     "domain": "drg.lt",

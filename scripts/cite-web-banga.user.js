@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        KAUNO.DIENA.LT Citation Generator for Wikipedia
+// @name        GARGZDAI.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from kauno.diena.lt articles
-// @match       https://kauno.diena.lt/*
-// @match       https://www.kauno.diena.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from gargzdai.lt articles
+// @match       https://gargzdai.lt/*
+// @match       https://www.gargzdai.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://kauno.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/2/favicon-96x96.png
+// @icon        https://www.gargzdai.lt/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kauno-diena.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kauno-diena.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-banga.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-banga.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -139,13 +139,15 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '#page-title span',
-  date: '.publishing-date',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.publishing-author a',
-  publisher: '[[Kauno diena]]',
-  website: 'kauno.diena.lt',
-  refName: 'kaunodiena'
+  title: '.post-title.lg',
+  date: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  },
+  dateFormat: raw => raw.split('T')[0],
+  publisher: '[[Banga (Klaipėda)|Banga]]',
+  website: 'gargzdai.lt',
+  refName: 'banga'
 });
 
 })();
