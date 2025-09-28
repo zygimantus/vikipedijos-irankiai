@@ -13,18 +13,6 @@ footer {
   padding: 1rem;
 }
 
-.vm-global-link {
-  font-weight: bold;
-  color: #007bff;
-  text-decoration: none;
-  margin-top: 0.5rem;
-  display: inline-block;
-}
-
-.vm-global-link:hover {
-  text-decoration: underline;
-}
-
 main {
   flex: 1;
   display: flex;
@@ -82,3 +70,32 @@ main {
   color: #555;
 }
 
+.how-to {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.how-to h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.how-to ol {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.how-to a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.how-to a:hover {
+  text-decoration: underline;
+}
