@@ -6,7 +6,7 @@
 // @match       https://www.ve.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
+// @icon        https://ve.lt/sites/default/files/favicon_0.ico
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-ve.user.js

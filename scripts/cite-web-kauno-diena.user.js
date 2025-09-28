@@ -6,7 +6,7 @@
 // @match       https://www.kauno.diena.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
+// @icon        https://kauno.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/2/favicon-96x96.png
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kauno-diena.user.js

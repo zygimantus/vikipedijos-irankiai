@@ -6,7 +6,7 @@
 // @match       https://www.laikrastisplunge.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
+// @icon        https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-plunge.user.js

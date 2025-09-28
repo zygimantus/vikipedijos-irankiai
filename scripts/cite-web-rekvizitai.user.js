@@ -6,7 +6,7 @@
 // @match       https://www.rekvizitai.vz.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
+// @icon        https://rekvizitai.vz.lt/images/favicon.ico
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-rekvizitai.user.js

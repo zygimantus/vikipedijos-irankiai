@@ -7,7 +7,7 @@ fetch("scripts.json")
       const c = document.createElement("div");
       c.className = "card";
       c.innerHTML = `
-        <a href="${item.url}" target="_blank" title="${item.domain}">
+        <a href="${item.url}" class="install-link" title="${item.domain}">
           <img src="${item.icon}" alt="${item.domain}">
         </a>`;
       const img = c.querySelector("img");
@@ -19,8 +19,15 @@ fetch("scripts.json")
       };
       g.appendChild(c);
     });
+
+    document.querySelectorAll(".install-link").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.location.href = link.href;
+      });
+    });
   })
   .catch(() => {
-    document.getElementById("gallery").textContent =
-      "⚠️ Failed to load gallery.";
+    const g = document.getElementById("gallery");
+    g.innerHTML = `<div class="gallery-fallback">⚠️ Failed to load gallery.</div>`;
   });
