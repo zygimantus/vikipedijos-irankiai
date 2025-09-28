@@ -140,7 +140,7 @@ function normalizeAgency(agency) {
 
 generate({
   title: '.title-block__heading',
-  date: '.info-block__text',
+  date: '.avatar-group__description span:nth-child(2)',
   dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
   author: '.author-info span',
   agency: '.article-source__description',

@@ -2,161 +2,161 @@
   {
     "domain": "lrt.lt",
     "icon": "https://www.lrt.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrt.user.js"
+    "url": "scripts/cite-web-lrt.user.js"
   },
   {
     "domain": "delfi.lt",
     "icon": "https://www.delfi.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-delfi.user.js"
+    "url": "scripts/cite-web-delfi.user.js"
   },
   {
     "domain": "15min.lt",
     "icon": "https://www.15min.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-15min.user.js"
+    "url": "scripts/cite-web-15min.user.js"
   },
   {
     "domain": "tv3.lt",
     "icon": "https://www.tv3.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-tv3.user.js"
+    "url": "scripts/cite-web-tv3.user.js"
   },
   {
     "domain": "lrytas.lt",
     "icon": "https://www.lrytas.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrytas.user.js"
+    "url": "scripts/cite-web-lrytas.user.js"
   },
   {
     "domain": "kauno.diena.lt",
     "icon": "https://kauno.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/2/favicon-96x96.png",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kauno-diena.user.js"
+    "url": "scripts/cite-web-kauno-diena.user.js"
   },
   {
     "domain": "ve.lt",
     "icon": "https://ve.lt/sites/default/files/favicon_0.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-ve.user.js"
+    "url": "scripts/cite-web-ve.user.js"
   },
   {
     "domain": "zmones.15min.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-zmones.user.js"
+    "url": "scripts/cite-web-zmones.user.js"
   },
   {
     "domain": "bernardinai.lt",
     "icon": "https://www.bernardinai.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-bernardinai.user.js"
+    "url": "scripts/cite-web-bernardinai.user.js"
   },
   {
     "domain": "vz.lt",
     "icon": "https://www.vz.lt/favicon-48x48.png",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vz.user.js"
+    "url": "scripts/cite-web-vz.user.js"
   },
   {
     "domain": "rekvizitai.vz.lt",
     "icon": "https://rekvizitai.vz.lt/images/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-rekvizitai.user.js"
+    "url": "scripts/cite-web-rekvizitai.user.js"
   },
   {
     "domain": "naujienos.vu.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vu.user.js"
+    "url": "scripts/cite-web-vu.user.js"
   },
   {
     "domain": "vilnius.lt",
     "icon": "https://vilnius.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vilnius.user.js"
+    "url": "scripts/cite-web-vilnius.user.js"
   },
   {
     "domain": "kaunas.kasvyksta.lt",
     "icon": "https://www.kaunas.kasvyksta.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kasvyksta.user.js"
+    "url": "scripts/cite-web-kasvyksta.user.js"
   },
   {
     "domain": "laikrastisplunge.lt",
     "icon": "https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-plunge.user.js"
+    "url": "scripts/cite-web-plunge.user.js"
   },
   {
     "domain": "zemaitis.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-zemaitis.user.js"
+    "url": "scripts/cite-web-zemaitis.user.js"
   },
   {
     "domain": "anykstenai.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-anykstenai.user.js"
+    "url": "scripts/cite-web-anykstenai.user.js"
   },
   {
     "domain": "jonavoszinios.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-jonavoszinios.user.js"
+    "url": "scripts/cite-web-jonavoszinios.user.js"
   },
   {
     "domain": "manodruskininkai.lt",
     "icon": "https://www.manodruskininkai.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-manodruskininkai.user.js"
+    "url": "scripts/cite-web-manodruskininkai.user.js"
   },
   {
     "domain": "voruta.lt",
     "icon": "https://www.voruta.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-voruta.user.js"
+    "url": "scripts/cite-web-voruta.user.js"
   },
   {
     "domain": "gzeme.lt",
     "icon": "https://www.gzeme.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-gzeme.user.js"
+    "url": "scripts/cite-web-gzeme.user.js"
   },
   {
     "domain": "valstietis.lt",
     "icon": "https://www.valstietis.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-valstietis.user.js"
+    "url": "scripts/cite-web-valstietis.user.js"
   },
   {
     "domain": "skrastas.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-skrastas.user.js"
+    "url": "scripts/cite-web-skrastas.user.js"
   },
   {
     "domain": "anyksta.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-anyksta.user.js"
+    "url": "scripts/cite-web-anyksta.user.js"
   },
   {
     "domain": "visalietuva.lt",
     "icon": "https://www.visalietuva.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-visalietuva.user.js"
+    "url": "scripts/cite-web-visalietuva.user.js"
   },
   {
     "domain": "tzinios.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-tzinios.user.js"
+    "url": "scripts/cite-web-tzinios.user.js"
   },
   {
     "domain": "darbs.lt",
     "icon": "",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-darbs.user.js"
+    "url": "scripts/cite-web-darbs.user.js"
   },
   {
     "domain": "pasvalioenciklopedija.lt",
     "icon": "https://www.pasvalioenciklopedija.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-pasvalioenciklopedija.user.js"
+    "url": "scripts/cite-web-pasvalioenciklopedija.user.js"
   },
   {
     "domain": "alkas.lt",
     "icon": "https://www.alkas.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alkas.user.js"
+    "url": "scripts/cite-web-alkas.user.js"
   },
   {
     "domain": "grokiskis.lt",
     "icon": "https://www.grokiskis.lt/wp-content/uploads/2016/05/favicon.png",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-grokiskis.user.js"
+    "url": "scripts/cite-web-grokiskis.user.js"
   },
   {
     "domain": "santarve.lt",
     "icon": "https://www.santarve.lt/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-santarve.user.js"
+    "url": "scripts/cite-web-santarve.user.js"
   },
   {
     "domain": "drg.lt",
     "icon": "https://www.drg.lt/templates/ja_good/favicon.ico",
-    "url": "https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-draugas.user.js"
+    "url": "scripts/cite-web-draugas.user.js"
   }
 ]
