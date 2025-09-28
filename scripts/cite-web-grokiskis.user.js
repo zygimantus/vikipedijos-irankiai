@@ -6,7 +6,7 @@
 // @match       https://www.grokiskis.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.grokiskis.lt/favicon.ico
+// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-grokiskis.user.js
