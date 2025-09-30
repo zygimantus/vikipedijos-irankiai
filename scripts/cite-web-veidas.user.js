@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        DELFI.LT Citation Generator for Wikipedia
+// @name        VEIDAS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from delfi.lt articles
-// @match       https://delfi.lt/*
-// @match       https://www.delfi.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from veidas.lt articles
+// @match       http://veidas.lt/*
+// @match       http://www.veidas.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.delfi.lt/favicon.ico
+// @icon        http://www.veidas.lt/wp-content/themes/veidas/images/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-delfi.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-delfi.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-veidas.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-veidas.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -164,18 +164,37 @@ function normalizeAgency(agency) {
   return '';
 }
 
+const months = {
+  'sausio': '01',
+  'vasario': '02',
+  'kovo': '03',
+  'balandžio': '04',
+  'gegužės': '05',
+  'birželio': '06',
+  'liepos': '07',
+  'rugpjūčio': '08',
+  'rugsėjo': '09',
+  'spalio': '10',
+  'lapkričio': '11',
+  'gruodžio': '12'
+};
+
 generate({
-  title: '.article-info__title',
-  date: '.article-info__publish-date',
-  dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: () => {
-    var _document$querySelect;
-    return (_document$querySelect = document.querySelector('meta[name="cXenseParse:author"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  title: '#post-52169 h2 a',
+  date: '.singletags.singletags_margins',
+  dateFormat: raw => {
+    const clean = raw.toLowerCase();
+    const parts = clean.split(/\s+/);
+    if (parts.length >= 3) {
+      const [year, monthLt, day] = parts;
+      const month = months[monthLt.toLowerCase()] || '??';
+      return `${year}-${month}-${day.padStart(2, '0')}`;
+    }
+    return raw;
   },
-  agency: '.article-source__description',
-  publisher: '[[Delfi]]',
-  website: 'delfi.lt',
-  refName: 'delfi'
+  publisher: '[[Veidas (žurnalas)|Veidas]]',
+  website: 'veidas.lt',
+  refName: 'veidas'
 });
 
 })();

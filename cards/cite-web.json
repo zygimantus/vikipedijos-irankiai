@@ -155,6 +155,11 @@
     "url": "scripts/cite-web-anyksta.user.js"
   },
   {
+    "domain": "veidas.lt",
+    "icon": "http://www.veidas.lt/wp-content/themes/veidas/images/favicon.ico",
+    "url": "scripts/cite-web-veidas.user.js"
+  },
+  {
     "domain": "gargzdai.lt",
     "icon": "https://www.gargzdai.lt/favicon.ico",
     "url": "scripts/cite-web-banga.user.js"
