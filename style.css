@@ -7,10 +7,14 @@ body {
   flex-direction: column;
 }
 
-header,
-footer {
+header {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+.bmc-button-header img {
+  height: 36px;
+  width: auto;
 }
 
 main {
@@ -19,8 +23,12 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100%;
+}
+
+section {
+  margin: 0.75rem 0;
 }
 
 .gallery-fallback {
@@ -31,19 +39,10 @@ main {
   padding: 1rem;
 }
 
-.card img,
-.img-fallback {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto;
-  display: block;
-  object-fit: contain;
-}
-
 .how-to {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: 1rem auto;
+  padding: 0.75rem;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -76,6 +75,7 @@ main {
   align-items: center;
   width: 100%;
   max-width: 1000px;
+  margin-top: 0.5rem
 }
 
 .tabs {
@@ -136,10 +136,20 @@ main {
   width: 80px;
 }
 
+.card img,
 .img-fallback {
+  width: 64px;
+  height: 64px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font: bold 32px sans-serif;
-  color: #555;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #333;
+  word-break: break-word;
 }

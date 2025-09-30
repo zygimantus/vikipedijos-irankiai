@@ -1,58 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab-button");
 
-  function loadGallery(category) {
+  async function loadGallery(category) {
     const g = document.getElementById(`gallery-${category}`);
     g.innerHTML = "<p>Įkeliama...</p>";
 
-    fetch(`cards/${category}.json`)
-      .then(r => r.json())
-      .then(data => {
-        g.innerHTML = "";
+    try {
+      const r = await fetch(`cards/${category}.json`);
+      const data = await r.json();
 
-        if (!data.length) {
-          g.innerHTML = `<div class="gallery-fallback">⚠️ Nėra ${category} įrankių.</div>`;
-          return;
-        }
+      g.innerHTML = data.length
+        ? data
+            .map(
+              (item) => `
+        <div class="card">
+          <a href="${item.url}" title="${item.domain}">
+            <img src="${item.icon}" alt="${item.domain}">
+            <div class="card-title">${item.domain}</div>
+          </a>
+        </div>
+      `
+            )
+            .join("")
+        : `<div class="gallery-fallback">⚠️ Nėra ${category} įrankių.</div>`;
 
-        data.forEach(item => {
-          const c = document.createElement("div");
-          c.className = "card";
-          c.innerHTML = `
-            <a href="${item.url}" class="install-link" title="${item.domain}">
-              <img src="${item.icon}" alt="${item.domain}">
-            </a>`;
-          
-          const img = c.querySelector("img");
-          img.onerror = () => {
-            const f = document.createElement("div");
-            f.className = "img-fallback";
-            f.textContent = (img.alt || "???").slice(0, 3).toUpperCase();
-            img.replaceWith(f);
-          };
-
-          g.appendChild(c);
-        });
-
-        g.querySelectorAll(".install-link").forEach(link => {
-          link.addEventListener("click", e => {
-            e.preventDefault();
-            window.location.href = link.href;
-          });
-        });
-      })
-      .catch(() => {
-        g.innerHTML = `<div class="gallery-fallback">⚠️ Nepavyko įkelti.</div>`;
+      // image fallback handling
+      g.querySelectorAll("img").forEach((img) => {
+        img.onerror = () => {
+          const f = document.createElement("div");
+          f.className = "img-fallback";
+          f.textContent = (img.alt || "???").slice(0, 5).toUpperCase();
+          img.replaceWith(f);
+        };
       });
+    } catch {
+      g.innerHTML = `<div class="gallery-fallback">⚠️ Nepavyko įkelti.</div>`;
+    }
   }
 
   loadGallery("cite-web");
 
-  tabs.forEach(btn => {
+  tabs.forEach((btn) => {
     btn.addEventListener("click", () => {
       // deactivate all tabs
-      tabs.forEach(b => b.classList.remove("active"));
-      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+      tabs.forEach((b) => b.classList.remove("active"));
+      document
+        .querySelectorAll(".tab-content")
+        .forEach((c) => c.classList.remove("active"));
 
       btn.classList.add("active");
       const target = btn.dataset.target;
