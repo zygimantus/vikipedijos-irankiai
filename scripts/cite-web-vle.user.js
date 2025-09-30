@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        JONAVOSZINIOS.LT Citation Generator for Wikipedia
+// @name        VLE.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from jonavoszinios.lt articles
-// @match       https://jonavoszinios.lt/*
-// @match       https://www.jonavoszinios.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from vle.lt articles
+// @match       https://vle.lt/*
+// @match       https://www.vle.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
+// @icon        https://www.vle.lt/orig_contrast_vle-logo-extract.png
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-jonavoszinios.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-jonavoszinios.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vle.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vle.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -151,19 +151,75 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '.entry-title h1',
-  date: () => {
-    const metaWrapper = document.querySelector('.float-left.w-90.hidden-md-down li');
-    // Get all text content inside (including text nodes)
-    const textNodes = Array.from(metaWrapper.childNodes).filter(node => node.nodeType === Node.TEXT_NODE) // only text nodes
-    .map(node => node.textContent.trim()) // trim whitespace
-    .filter(Boolean); // remove empty strings
-
-    // The date is usually the second text node (after author)
-    return textNodes[0];
+  title: '.custom-title-1.ct-main',
+  date: '[data-edited]',
+  origDate: '[data-published]',
+  // dateFormat: (raw) => raw.split(/\s+/)[0].replace(/\./g, '-'),
+  author: () => {
+    var _document$querySelect;
+    let author = ((_document$querySelect = document.querySelector('[data-aut2]')) == null || (_document$querySelect = _document$querySelect.textContent) == null ? void 0 : _document$querySelect.trim()) || '';
+    if (author === 'MELC') author = '[[MELC]]';
+    return author;
   },
-  website: 'jonavoszinios.lt',
-  refName: 'jonavoszinios'
+  forceAuthor: true,
+  editor: '[data-red]',
+  publisher: '[[VLE]]',
+  refName: 'vle',
+  delay: 1500
 });
+
+// import { generateCiteWeb, copyToClipboard, CiteWebData } from '../index';
+
+// (function () {
+//   'use strict';
+
+//   const collectData = (): CiteWebData => {
+//     const get = (sel: string) =>
+//       document.querySelector(sel)?.textContent?.trim() || '';
+
+//     let author = get('[data-aut2]');
+//     if (author === 'MELC') author = '[[MELC]]';
+
+//     return {
+//       title: get('.custom-title-1.ct-main'),
+//       url: window.location.href,
+//       author,
+//       editor: get('[data-red]'),
+//       date: get('[data-edited]'),
+//       origDate: get('[data-published]'),
+//       publisher: 'VLE',
+//     };
+//   };
+
+//   const isReady = (data: CiteWebData) => !!(data.title && data.date);
+
+//   const waitUntilReadyAndRun = (timeout = 10000) => {
+//     const start = Date.now();
+//     const tryRun = () => {
+//       const data = collectData();
+//       if (isReady(data)) {
+//         observer.disconnect();
+//         const cite = generateCiteWeb(data);
+//         copyToClipboard(cite);
+//         return;
+//       }
+//       if (Date.now() - start > timeout) {
+//         observer.disconnect();
+//         console.warn('❌ Citation not generated — timed out waiting for content.');
+//       }
+//     };
+
+//     tryRun();
+
+//     const observer = new MutationObserver(tryRun);
+//     observer.observe(document.body, {
+//       childList: true,
+//       subtree: true,
+//       characterData: true,
+//     });
+//   };
+
+//   waitUntilReadyAndRun();
+// })();
 
 })();

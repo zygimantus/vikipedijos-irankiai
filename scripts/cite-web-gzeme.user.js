@@ -47,9 +47,9 @@ async function generateCiteWeb(data) {
     agency: data.agency,
     editor: data.editor,
     date: data.date,
+    'orig-date': data.origDate && data.origDate !== data.date ? data.origDate : undefined,
     website: data.website,
     publisher: data.publisher,
-    'orig-date': data.origDate && data.origDate !== data.date ? data.origDate : undefined,
     'access-date': accessDate,
     language: data.language
   };
@@ -94,9 +94,12 @@ async function generate(config) {
     }
     let first = '';
     let last = '';
+    let author = '';
     if (config.author) {
       const authorRaw = resolveSelectorOrValue(config.author);
-      if (authorRaw.length < 40) {
+      if (config.forceAuthor === true) {
+        author = authorRaw;
+      } else if (authorRaw.length < 40) {
         const parts = authorRaw.split(/\s+/);
         if (parts.length > 1) {
           first = parts.slice(0, -1).join(' ');
@@ -104,21 +107,30 @@ async function generate(config) {
         }
       }
     }
+    let editor = '';
+    if (config.editor) {
+      editor = resolveSelectorOrValue(config.editor);
+    }
     let agency = '';
     if (config.agency) {
       agency = normalizeAgency(resolveSelectorOrValue(config.agency));
+    }
+    let website = '';
+    if (config.website) {
+      website = getValue(config.website);
     }
     const data = {
       title,
       url,
       last,
       first,
-      author: '',
+      author,
+      editor,
       agency,
       date,
       origDate,
       publisher: config.publisher ? getValue(config.publisher) : '',
-      website: getValue(config.website),
+      website,
       refName: getValue(config.refName),
       language: config.language ? getValue(config.language) : 'lt'
     };

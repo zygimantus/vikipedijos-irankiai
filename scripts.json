@@ -1,5 +1,10 @@
 [
   {
+    "domain": "vle.lt",
+    "icon": "https://www.vle.lt/orig_contrast_vle-logo-extract.png",
+    "url": "scripts/cite-web-vle.user.js"
+  },
+  {
     "domain": "lrt.lt",
     "icon": "https://www.lrt.lt/favicon.ico",
     "url": "scripts/cite-web-lrt.user.js"
