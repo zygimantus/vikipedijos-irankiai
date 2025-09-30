@@ -85,6 +85,11 @@
     "url": "scripts/cite-web-kariuomene.user.js"
   },
   {
+    "domain": "lrs.lt",
+    "icon": "https://www.lrs.lt/SIPIS/portal/images/favicon.ico",
+    "url": "scripts/cite-web-lrs.user.js"
+  },
+  {
     "domain": "laikrastisplunge.lt",
     "icon": "https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png",
     "url": "scripts/cite-web-plunge.user.js"
