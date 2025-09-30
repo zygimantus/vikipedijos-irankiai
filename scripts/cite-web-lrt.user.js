@@ -142,7 +142,10 @@ generate({
   title: '.title-block__heading',
   date: '.avatar-group__description span:nth-child(2)',
   dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.author-info span',
+  author: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="author"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  },
   agency: '.article-source__description',
   publisher: '[[LRT]]',
   website: 'lrt.lt',
