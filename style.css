@@ -16,23 +16,11 @@ footer {
 main {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 1rem;
-}
-
-.gallery-section h2 {
-  text-align: center;
-  margin: 0.5rem 0 1rem;
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 1rem;
-  justify-content: center;
+  width: 100%;
 }
 
 .gallery-fallback {
@@ -43,15 +31,6 @@ main {
   padding: 1rem;
 }
 
-.card {
-  text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background: #fff;
-  padding: 0.5rem;
-  width: 80px;
-}
-
 .card img,
 .img-fallback {
   width: 64px;
@@ -59,15 +38,6 @@ main {
   margin: 0 auto;
   display: block;
   object-fit: contain;
-}
-
-.img-fallback {
-  background: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: bold 32px sans-serif;
-  color: #555;
 }
 
 .how-to {
@@ -92,10 +62,84 @@ main {
 }
 
 .how-to a {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
 }
 
 .how-to a:hover {
   text-decoration: underline;
+}
+
+.tab-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.tab-button:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+.tab-button.active {
+  background: #fff;
+  color: #007bff;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+}
+.tab-button:hover {
+  background: #e6e6e6;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  border-top: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  padding: 0.5rem;
+  width: 80px;
+}
+
+.img-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 32px sans-serif;
+  color: #555;
 }
