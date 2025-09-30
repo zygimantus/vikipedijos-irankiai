@@ -120,11 +120,9 @@ async function prepareCitation(config) {
   if (config.website) {
     website = getValue(config.website);
   }
-  let language = 'lt';
-  if (config.language !== 'NONE') {
+  let language = '';
+  if (config.language) {
     language = getValue(config.language);
-  } else {
-    language = null;
   }
   const data = {
     title,

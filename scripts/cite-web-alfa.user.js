@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        MANODRUSKININKAI.LT Citation Generator for Wikipedia
+// @name        ALFA.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from manodruskininkai.lt articles
-// @match       https://manodruskininkai.lt/*
-// @match       https://www.manodruskininkai.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from alfa.lt articles
+// @match       https://alfa.lt/*
+// @match       https://www.alfa.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.manodruskininkai.lt/favicon.ico
+// @icon        https://www.alfa.lt/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-manodruskininkai.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-manodruskininkai.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alfa.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alfa.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -180,22 +180,26 @@ const months = {
 };
 
 generate({
-  title: '.entry-title',
-  date: '.entry-date.published',
+  title: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  },
+  date: '.autoriusSocial div:nth-child(2)',
   dateFormat: raw => {
-    if (!raw) return raw;
-    const date = raw.replace(',', '').trim();
-    const parts = date.split(/\s+/);
-    if (parts.length === 3) {
-      const [day, monthLt, year] = parts;
+    const clean = raw.replace(',', '').replace('m.', '').toLowerCase();
+    const parts = clean.split(/\s+/);
+    if (parts.length >= 3) {
+      const [year, monthLt, day] = parts;
       const month = months[monthLt.toLowerCase()] || '??';
       return `${year}-${month}-${day.padStart(2, '0')}`;
     }
     return raw;
   },
-  publisher: 'Mano Druskininkai',
-  website: 'manodruskininkai.lt',
-  refName: 'manodruskininkai'
+  agency: '.autoriusSocial div a',
+  publisher: '[[Alfa.lt]]',
+  website: 'alfa.lt',
+  refName: 'alfa',
+  delay: 1000
 });
 
 })();

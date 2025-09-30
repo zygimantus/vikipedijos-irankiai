@@ -50,6 +50,11 @@
     "url": "scripts/cite-web-bernardinai.user.js"
   },
   {
+    "domain": "alfa.lt",
+    "icon": "https://www.alfa.lt/favicon.ico",
+    "url": "scripts/cite-web-alfa.user.js"
+  },
+  {
     "domain": "vz.lt",
     "icon": "https://www.vz.lt/favicon-48x48.png",
     "url": "scripts/cite-web-vz.user.js"
@@ -88,6 +93,11 @@
     "domain": "lrs.lt",
     "icon": "https://www.lrs.lt/SIPIS/portal/images/favicon.ico",
     "url": "scripts/cite-web-lrs.user.js"
+  },
+  {
+    "domain": "*.lrv.lt",
+    "icon": "https://vrm.lrv.lt/static/favicon/favicon.d26b39465720.ico",
+    "url": "scripts/cite-web-lrv.user.js"
   },
   {
     "domain": "laikrastisplunge.lt",

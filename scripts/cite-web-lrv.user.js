@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        MANODRUSKININKAI.LT Citation Generator for Wikipedia
+// @name        *.LRV.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from manodruskininkai.lt articles
-// @match       https://manodruskininkai.lt/*
-// @match       https://www.manodruskininkai.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from *.lrv.lt articles
+// @match       https://*.lrv.lt/*
+// @match       https://www.*.lrv.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.manodruskininkai.lt/favicon.ico
+// @icon        https://vrm.lrv.lt/static/favicon/favicon.d26b39465720.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-manodruskininkai.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-manodruskininkai.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrv.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrv.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -164,38 +164,15 @@ function normalizeAgency(agency) {
   return '';
 }
 
-const months = {
-  'sausio': '01',
-  'vasario': '02',
-  'kovo': '03',
-  'balandžio': '04',
-  'gegužės': '05',
-  'birželio': '06',
-  'liepos': '07',
-  'rugpjūčio': '08',
-  'rugsėjo': '09',
-  'spalio': '10',
-  'lapkričio': '11',
-  'gruodžio': '12'
-};
-
 generate({
-  title: '.entry-title',
-  date: '.entry-date.published',
-  dateFormat: raw => {
-    if (!raw) return raw;
-    const date = raw.replace(',', '').trim();
-    const parts = date.split(/\s+/);
-    if (parts.length === 3) {
-      const [day, monthLt, year] = parts;
-      const month = months[monthLt.toLowerCase()] || '??';
-      return `${year}-${month}-${day.padStart(2, '0')}`;
-    }
-    return raw;
+  title: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
   },
-  publisher: 'Mano Druskininkai',
-  website: 'manodruskininkai.lt',
-  refName: 'manodruskininkai'
+  date: '.site-date',
+  publisher: '[[LR Vyriausybė]]',
+  website: 'lrv.lt',
+  refName: 'lrv'
 });
 
 })();
