@@ -100,6 +100,11 @@
     "url": "scripts/cite-web-manodruskininkai.user.js"
   },
   {
+    "domain": "vilniauskrastas.lt",
+    "icon": "https://www.vilniauskrastas.lt/favicon.ico",
+    "url": "scripts/cite-web-vilniauskrastas.user.js"
+  },
+  {
     "domain": "voruta.lt",
     "icon": "https://www.voruta.lt/favicon.ico",
     "url": "scripts/cite-web-voruta.user.js"
@@ -165,6 +170,11 @@
     "url": "scripts/cite-web-santarve.user.js"
   },
   {
+    "domain": "suduvosgidas.lt",
+    "icon": "https://www.suduvosgidas.lt/favicon.ico",
+    "url": "scripts/cite-web-suduvosgidas.user.js"
+  },
+  {
     "domain": "suvalkietis.lt",
     "icon": "",
     "url": "scripts/cite-web-suvalkietis.user.js"
@@ -178,6 +188,11 @@
     "domain": "kaisiadoriuaidai.lt",
     "icon": "http://www.kaisiadoriuaidai.lt/images/favicon.ico",
     "url": "scripts/cite-web-kaisiadoriuaidai.user.js"
+  },
+  {
+    "domain": "manoukis.lt",
+    "icon": "https://www.manoukis.lt/favicon.ico",
+    "url": "scripts/cite-web-manoukis.user.js"
   },
   {
     "domain": "drg.lt",
