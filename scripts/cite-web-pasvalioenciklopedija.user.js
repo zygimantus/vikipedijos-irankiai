@@ -70,71 +70,87 @@ function capitalizeName(name) {
   return name.split(/\s+/).map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()).join(' ');
 }
 
+const getValue = v => typeof v === 'function' ? v() : v;
+const resolveSelectorOrValue = input => {
+  if (typeof input === 'string') {
+    var _el$textContent;
+    const el = document.querySelector(input);
+    return (el == null || (_el$textContent = el.textContent) == null ? void 0 : _el$textContent.trim()) || '';
+  }
+  return getValue(input);
+};
+
+// Function that only prepares and returns the data (or citation)
+async function prepareCitation(config) {
+  const url = window.location.href;
+  const title = resolveSelectorOrValue(config.title);
+  let date = '';
+  if (config.date) {
+    date = resolveSelectorOrValue(config.date);
+    if (config.dateFormat) date = config.dateFormat(date);
+  }
+  let origDate = '';
+  if (config.origDate) {
+    origDate = resolveSelectorOrValue(config.origDate);
+  }
+  let first = '';
+  let last = '';
+  let author = '';
+  if (config.author) {
+    const authorRaw = resolveSelectorOrValue(config.author);
+    if (config.forceAuthor === true) {
+      author = authorRaw;
+    } else if (authorRaw.length < 40) {
+      const parts = authorRaw.split(/\s+/);
+      if (parts.length > 1) {
+        first = parts.slice(0, -1).join(' ');
+        if (first.length < 3) first = '';else last = parts.slice(-1)[0];
+      }
+    }
+  }
+  let editor = '';
+  if (config.editor) {
+    editor = resolveSelectorOrValue(config.editor);
+  }
+  let agency = '';
+  if (config.agency) {
+    agency = normalizeAgency(resolveSelectorOrValue(config.agency));
+  }
+  let website = '';
+  if (config.website) {
+    website = getValue(config.website);
+  }
+  let language = 'lt';
+  if (config.language !== 'NONE') {
+    language = getValue(config.language);
+  } else {
+    language = null;
+  }
+  const data = {
+    title,
+    url,
+    last,
+    first,
+    author,
+    editor,
+    agency,
+    date,
+    origDate,
+    publisher: config.publisher ? getValue(config.publisher) : '',
+    website,
+    refName: getValue(config.refName),
+    language
+  };
+
+  // Generate citation string and return it
+  const cite = await generateCiteWeb(data);
+  return cite;
+}
+
+// Function that uses prepareCitation and copies to clipboard
 async function generate(config) {
   const run = async () => {
-    const getValue = v => typeof v === 'function' ? v() : v;
-    const resolveSelectorOrValue = input => {
-      if (typeof input === 'string') {
-        var _el$textContent;
-        const el = document.querySelector(input);
-        return (el == null || (_el$textContent = el.textContent) == null ? void 0 : _el$textContent.trim()) || '';
-      }
-      return getValue(input);
-    };
-    const url = window.location.href;
-    const title = resolveSelectorOrValue(config.title);
-    let date = '';
-    if (config.date) {
-      date = resolveSelectorOrValue(config.date);
-      if (config.dateFormat) date = config.dateFormat(date);
-    }
-    let origDate = '';
-    if (config.origDate) {
-      origDate = resolveSelectorOrValue(config.origDate);
-    }
-    let first = '';
-    let last = '';
-    let author = '';
-    if (config.author) {
-      const authorRaw = resolveSelectorOrValue(config.author);
-      if (config.forceAuthor === true) {
-        author = authorRaw;
-      } else if (authorRaw.length < 40) {
-        const parts = authorRaw.split(/\s+/);
-        if (parts.length > 1) {
-          first = parts.slice(0, -1).join(' ');
-          if (first.length < 3) first = '';else last = parts.slice(-1)[0];
-        }
-      }
-    }
-    let editor = '';
-    if (config.editor) {
-      editor = resolveSelectorOrValue(config.editor);
-    }
-    let agency = '';
-    if (config.agency) {
-      agency = normalizeAgency(resolveSelectorOrValue(config.agency));
-    }
-    let website = '';
-    if (config.website) {
-      website = getValue(config.website);
-    }
-    const data = {
-      title,
-      url,
-      last,
-      first,
-      author,
-      editor,
-      agency,
-      date,
-      origDate,
-      publisher: config.publisher ? getValue(config.publisher) : '',
-      website,
-      refName: getValue(config.refName),
-      language: config.language ? getValue(config.language) : 'lt'
-    };
-    const cite = await generateCiteWeb(data);
+    const cite = await prepareCitation(config);
     copyToClipboard(cite);
   };
   if (config.delay && config.delay > 0) {

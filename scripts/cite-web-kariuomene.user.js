@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        REKVIZITAI.VZ.LT Citation Generator for Wikipedia
+// @name        KARIUOMENE.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from rekvizitai.vz.lt articles
-// @match       https://rekvizitai.vz.lt/*
-// @match       https://www.rekvizitai.vz.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from kariuomene.lt articles
+// @match       https://kariuomene.lt/*
+// @match       https://www.kariuomene.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://rekvizitai.vz.lt/images/favicon.ico
+// @icon        https://kariuomene.lt/static/themes/site/img/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-rekvizitai.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-rekvizitai.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kariuomene.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kariuomene.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -167,9 +167,11 @@ function normalizeAgency(agency) {
 }
 
 generate({
-  title: '.title',
-  website: 'rekvizitai.vz.lt',
-  refName: 'rekvizitai'
+  title: '.content_title.font-weight-normal',
+  date: '.content_date',
+  publisher: '[[Lietuvos kariuomenė]]',
+  website: 'kariuomene.lt',
+  refName: 'kariuomene'
 });
 
 })();

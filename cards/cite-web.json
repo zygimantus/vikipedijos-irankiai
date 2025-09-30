@@ -80,6 +80,11 @@
     "url": "scripts/cite-web-atviraklaipeda.user.js"
   },
   {
+    "domain": "kariuomene.lt",
+    "icon": "https://kariuomene.lt/static/themes/site/img/favicon.ico",
+    "url": "scripts/cite-web-kariuomene.user.js"
+  },
+  {
     "domain": "laikrastisplunge.lt",
     "icon": "https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png",
     "url": "scripts/cite-web-plunge.user.js"
