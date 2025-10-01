@@ -80,6 +80,16 @@
     "url": "scripts/cite-web-atviraklaipeda.user.js"
   },
   {
+    "domain": "klaipedaassutavim.lt",
+    "icon": "https://www.klaipedaassutavim.lt/favicon.ico",
+    "url": "scripts/cite-web-klaipedaassutavim.user.js"
+  },
+  {
+    "domain": "diena.lt",
+    "icon": "https://diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/1/favicon.svg",
+    "url": "scripts/cite-web-diena.user.js"
+  },
+  {
     "domain": "manodruskininkai.lt",
     "icon": "https://www.manodruskininkai.lt/favicon.ico",
     "url": "scripts/cite-web-manodruskininkai.user.js"
