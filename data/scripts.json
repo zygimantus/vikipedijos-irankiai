@@ -106,7 +106,7 @@
   },
   {
     "domain": "veidas.lt",
-    "icon": "http://www.veidas.lt/wp-content/themes/veidas/images/favicon.ico",
+    "icon": "https://favicon.pub/veidas.lt",
     "url": "scripts/cite-web-veidas.user.js"
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "domain": "kaisiadoriuaidai.lt",
-    "icon": "http://www.kaisiadoriuaidai.lt/images/favicon.ico",
+    "icon": "https://favicon.pub/kaisiadoriuaidai.lt",
     "url": "scripts/cite-web-kaisiadoriuaidai.user.js"
   },
   {

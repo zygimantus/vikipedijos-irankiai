@@ -23,7 +23,6 @@
 'use strict';
 
 const USE_REF_NAME_KEY = 'USE_REF_NAME';
-const CITE_WEB_REGEX = /^<ref(?:\s+name="[^"]*")?>\{\{cite web\s*((?:\|\s*[\w-]+\s*=\s*[^]+?)+)\s*\}\}<\/ref>$/iu;
 async function getUseRefName() {
   const stored = await GM.getValue(USE_REF_NAME_KEY);
   if (stored === undefined) {
@@ -59,12 +58,8 @@ async function generateCiteWeb(data) {
   return cite + '}}</ref>';
 }
 function copyToClipboard(text) {
-  if (CITE_WEB_REGEX.test(text)) {
-    GM.setClipboard(text);
-    console.log(text);
-  } else {
-    console.warn('Generated citation is invalid, please reach out developer');
-  }
+  GM.setClipboard(text);
+  console.log(text);
 }
 function capitalizeName(name) {
   return name.split(/\s+/).map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()).join(' ');
@@ -80,7 +75,13 @@ const resolveSelectorOrValue = input => {
   return getValue(input);
 };
 
-// Function that only prepares and returns the data (or citation)
+function normalizeAgency(agency) {
+  const lower = agency.trim().toLowerCase();
+  if (lower === 'bns') return '[[BNS]]';
+  if (lower === 'elta') return '[[ELTA]]';
+  return '';
+}
+
 async function prepareCitation(config) {
   const url = window.location.href;
   const title = resolveSelectorOrValue(config.title);
@@ -89,16 +90,13 @@ async function prepareCitation(config) {
     date = resolveSelectorOrValue(config.date);
     if (config.dateFormat) date = config.dateFormat(date);
   }
-  let origDate = '';
-  if (config.origDate) {
-    origDate = resolveSelectorOrValue(config.origDate);
-  }
-  let first = '';
-  let last = '';
-  let author = '';
+  const origDate = config.origDate ? resolveSelectorOrValue(config.origDate) : '';
+  let first = '',
+    last = '',
+    author = '';
   if (config.author) {
     const authorRaw = resolveSelectorOrValue(config.author);
-    if (config.forceAuthor === true) {
+    if (config.forceAuthor) {
       author = authorRaw;
     } else if (authorRaw.length < 40) {
       const parts = authorRaw.split(/\s+/);
@@ -108,44 +106,24 @@ async function prepareCitation(config) {
       }
     }
   }
-  let editor = '';
-  if (config.editor) {
-    editor = resolveSelectorOrValue(config.editor);
-  }
-  let agency = '';
-  if (config.agency) {
-    agency = normalizeAgency(resolveSelectorOrValue(config.agency));
-  }
-  let website = '';
-  if (config.website) {
-    website = getValue(config.website);
-  }
-  let language = '';
-  if (config.language) {
-    language = getValue(config.language);
-  }
   const data = {
     title,
     url,
     last,
     first,
     author,
-    editor,
-    agency,
+    editor: config.editor ? resolveSelectorOrValue(config.editor) : '',
+    agency: config.agency ? normalizeAgency(resolveSelectorOrValue(config.agency)) : '',
     date,
     origDate,
     publisher: config.publisher ? getValue(config.publisher) : '',
-    website,
+    website: config.website ? getValue(config.website) : '',
     refName: getValue(config.refName),
-    language
+    language: config.language ? getValue(config.language) : ''
   };
-
-  // Generate citation string and return it
-  const cite = await generateCiteWeb(data);
-  return cite;
+  return generateCiteWeb(data);
 }
 
-// Function that uses prepareCitation and copies to clipboard
 async function generate(config) {
   const run = async () => {
     const cite = await prepareCitation(config);
@@ -156,12 +134,6 @@ async function generate(config) {
   } else {
     run();
   }
-}
-function normalizeAgency(agency) {
-  const lower = agency.trim().toLowerCase();
-  if (lower === 'bns') return '[[BNS]]';
-  if (lower === 'elta') return '[[ELTA]]';
-  return '';
 }
 
 generate({
