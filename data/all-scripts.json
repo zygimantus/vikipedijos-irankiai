@@ -230,12 +230,12 @@
     "url": "scripts/cite-web-suvalkietis.user.js"
   },
   {
-    "domain": "eseimas.lt",
+    "domain": "e-seimas.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-eseimas.user.js"
   },
   {
-    "domain": "etar.lt",
+    "domain": "e-tar.lt",
     "icon": "https://www.e-tar.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-etar.user.js"
   }
