@@ -4,19 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
     g.innerHTML = "<p>Įkeliama...</p>";
 
     try {
-      const r = await fetch("data/scripts.json");
+      const r = await fetch("data/all-scripts.json");
       const data = await r.json();
 
       g.innerHTML = data.length
         ? data
             .map(
               (item) => `
-        <div class="card">
-          <a href="${item.url}" title="${item.domain}">
-            <img src="${item.icon}" alt="${item.domain}">
-            <div class="card-title">${item.domain}</div>
-          </a>
-        </div>`
+                <div class="card">
+                  <a href="${item.url}" title="Install ${item.domain} script">
+                    <img src="${item.icon}" alt="${item.domain}">
+                  </a>
+                  <a class="card-title" href="https://${item.domain}" target="_blank" rel="noopener noreferrer">
+                    ${item.domain}
+                  </a>
+                </div>`
             )
             .join("")
         : `<div class="gallery-fallback">⚠️ Nėra įrankių.</div>`;
