@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll(".tab-button");
-
-  async function loadGallery(category) {
-    const g = document.getElementById(`gallery-${category}`);
+  async function loadGallery() {
+    const g = document.getElementById("gallery");
     g.innerHTML = "<p>Įkeliama...</p>";
 
     try {
-      const r = await fetch(`cards/${category}.json`);
+      const r = await fetch("data/scripts.json");
       const data = await r.json();
 
       g.innerHTML = data.length
@@ -18,18 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
             <img src="${item.icon}" alt="${item.domain}">
             <div class="card-title">${item.domain}</div>
           </a>
-        </div>
-      `
+        </div>`
             )
             .join("")
-        : `<div class="gallery-fallback">⚠️ Nėra ${category} įrankių.</div>`;
+        : `<div class="gallery-fallback">⚠️ Nėra įrankių.</div>`;
 
-      // image fallback handling
       g.querySelectorAll("img").forEach((img) => {
         img.onerror = () => {
           const f = document.createElement("div");
           f.className = "img-fallback";
-          f.textContent = (img.alt || "???").slice(0, 5).toUpperCase();
+          f.textContent = (img.alt || "???").toUpperCase();
           img.replaceWith(f);
         };
       });
@@ -38,21 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  loadGallery("cite-web");
-
-  tabs.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      // deactivate all tabs
-      tabs.forEach((b) => b.classList.remove("active"));
-      document
-        .querySelectorAll(".tab-content")
-        .forEach((c) => c.classList.remove("active"));
-
-      btn.classList.add("active");
-      const target = btn.dataset.target;
-      document.getElementById(target).classList.add("active");
-
-      loadGallery(target);
-    });
-  });
+  loadGallery();
 });
