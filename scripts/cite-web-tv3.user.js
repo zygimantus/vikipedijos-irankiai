@@ -140,6 +140,7 @@ generate({
   title: '.article-title-1100',
   date: '.source-info',
   dateFormat: d => d.split(' ')[0],
+  author: '.desktop-author',
   publisher: '[[TV3]]',
   website: 'tv3.lt',
   refName: 'tv3'
