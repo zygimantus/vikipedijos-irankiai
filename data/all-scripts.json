@@ -294,7 +294,7 @@
     "folder": "cite-web"
   },
   {
-    "domain": "e-seimas.lt",
+    "domain": "e-seimas.lrs.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-eseimas.user.js",
     "folder": "cite-act"

@@ -142,6 +142,10 @@ generate({
     const el = document.querySelector('time.date.published');
     return el == null ? void 0 : el.getAttribute('datetime').split('T')[0];
   },
+  author: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[name="author"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  },
   publisher: '[[Santarvė (Mažeikiai)|Santarvė]]',
   website: 'santarve.lt',
   refName: 'santarve'
