@@ -2,256 +2,307 @@
   {
     "domain": "vle.lt",
     "icon": "https://www.vle.lt/orig_contrast_vle-logo-extract.png",
-    "url": "scripts/cite-web-vle.user.js"
+    "url": "scripts/cite-web-vle.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "lrt.lt",
     "icon": "https://www.lrt.lt/favicon.ico",
-    "url": "scripts/cite-web-lrt.user.js"
+    "url": "scripts/cite-web-lrt.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "delfi.lt",
     "icon": "https://www.delfi.lt/favicon.ico",
-    "url": "scripts/cite-web-delfi.user.js"
+    "url": "scripts/cite-web-delfi.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "15min.lt",
     "icon": "https://www.15min.lt/favicon.ico",
-    "url": "scripts/cite-web-15min.user.js"
+    "url": "scripts/cite-web-15min.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "tv3.lt",
     "icon": "https://www.tv3.lt/favicon.ico",
-    "url": "scripts/cite-web-tv3.user.js"
+    "url": "scripts/cite-web-tv3.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "lrytas.lt",
     "icon": "https://www.lrytas.lt/favicon.ico",
-    "url": "scripts/cite-web-lrytas.user.js"
+    "url": "scripts/cite-web-lrytas.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "kauno.diena.lt",
     "icon": "https://kauno.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/2/favicon-96x96.png",
-    "url": "scripts/cite-web-kauno-diena.user.js"
+    "url": "scripts/cite-web-kauno-diena.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "ve.lt",
     "icon": "https://ve.lt/sites/default/files/favicon_0.ico",
-    "url": "scripts/cite-web-ve.user.js"
+    "url": "scripts/cite-web-ve.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "alfa.lt",
     "icon": "https://www.alfa.lt/favicon.ico",
-    "url": "scripts/cite-web-alfa.user.js"
+    "url": "scripts/cite-web-alfa.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "lrs.lt",
     "icon": "https://www.lrs.lt/SIPIS/portal/images/favicon.ico",
-    "url": "scripts/cite-web-lrs.user.js"
+    "url": "scripts/cite-web-lrs.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "*.lrv.lt",
     "icon": "https://vrm.lrv.lt/static/favicon/favicon.d26b39465720.ico",
-    "url": "scripts/cite-web-lrv.user.js"
+    "url": "scripts/cite-web-lrv.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "laikrastisplunge.lt",
     "icon": "https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png",
-    "url": "scripts/cite-web-plunge.user.js"
+    "url": "scripts/cite-web-plunge.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "vz.lt",
     "icon": "https://www.vz.lt/favicon-48x48.png",
-    "url": "scripts/cite-web-vz.user.js"
+    "url": "scripts/cite-web-vz.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "rekvizitai.vz.lt",
     "icon": "https://rekvizitai.vz.lt/images/favicon.ico",
-    "url": "scripts/cite-web-rekvizitai.user.js"
+    "url": "scripts/cite-web-rekvizitai.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "kaunas.kasvyksta.lt",
     "icon": "https://www.kaunas.kasvyksta.lt/favicon.ico",
-    "url": "scripts/cite-web-kasvyksta.user.js"
+    "url": "scripts/cite-web-kasvyksta.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "atviraklaipeda.lt",
     "icon": "https://www.atviraklaipeda.lt/wp-content/themes/atviraklaipeda/assets/favicon.png",
-    "url": "scripts/cite-web-atviraklaipeda.user.js"
+    "url": "scripts/cite-web-atviraklaipeda.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "klaipedaassutavim.lt",
     "icon": "https://www.klaipedaassutavim.lt/favicon.ico",
-    "url": "scripts/cite-web-klaipedaassutavim.user.js"
+    "url": "scripts/cite-web-klaipedaassutavim.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "diena.lt",
     "icon": "https://diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/1/favicon.svg",
-    "url": "scripts/cite-web-diena.user.js"
+    "url": "scripts/cite-web-diena.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "manodruskininkai.lt",
     "icon": "https://www.manodruskininkai.lt/favicon.ico",
-    "url": "scripts/cite-web-manodruskininkai.user.js"
+    "url": "scripts/cite-web-manodruskininkai.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "vilniauskrastas.lt",
     "icon": "https://www.vilniauskrastas.lt/favicon.ico",
-    "url": "scripts/cite-web-vilniauskrastas.user.js"
+    "url": "scripts/cite-web-vilniauskrastas.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "pajurionaujienos.com",
     "icon": "https://www.pajurionaujienos.com/favicon.ico",
-    "url": "scripts/cite-web-pajurionaujienos.user.js"
+    "url": "scripts/cite-web-pajurionaujienos.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "voruta.lt",
     "icon": "https://www.voruta.lt/favicon.ico",
-    "url": "scripts/cite-web-voruta.user.js"
+    "url": "scripts/cite-web-voruta.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "gzeme.lt",
     "icon": "https://www.gzeme.lt/favicon.ico",
-    "url": "scripts/cite-web-gzeme.user.js"
+    "url": "scripts/cite-web-gzeme.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "valstietis.lt",
     "icon": "https://www.valstietis.lt/favicon.ico",
-    "url": "scripts/cite-web-valstietis.user.js"
+    "url": "scripts/cite-web-valstietis.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "veidas.lt",
     "icon": "https://favicon.pub/veidas.lt",
-    "url": "scripts/cite-web-veidas.user.js"
+    "url": "scripts/cite-web-veidas.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "gargzdai.lt",
     "icon": "https://www.gargzdai.lt/favicon.ico",
-    "url": "scripts/cite-web-banga.user.js"
+    "url": "scripts/cite-web-banga.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "visalietuva.lt",
     "icon": "https://www.visalietuva.lt/favicon.ico",
-    "url": "scripts/cite-web-visalietuva.user.js"
+    "url": "scripts/cite-web-visalietuva.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "pasvalioenciklopedija.lt",
     "icon": "https://www.pasvalioenciklopedija.lt/favicon.ico",
-    "url": "scripts/cite-web-pasvalioenciklopedija.user.js"
+    "url": "scripts/cite-web-pasvalioenciklopedija.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "alkas.lt",
     "icon": "https://www.alkas.lt/favicon.ico",
-    "url": "scripts/cite-web-alkas.user.js"
+    "url": "scripts/cite-web-alkas.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "grokiskis.lt",
     "icon": "https://www.grokiskis.lt/wp-content/uploads/2016/05/favicon.png",
-    "url": "scripts/cite-web-grokiskis.user.js"
+    "url": "scripts/cite-web-grokiskis.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "santarve.lt",
     "icon": "https://www.santarve.lt/favicon.ico",
-    "url": "scripts/cite-web-santarve.user.js"
+    "url": "scripts/cite-web-santarve.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "suduvosgidas.lt",
     "icon": "https://www.suduvosgidas.lt/favicon.ico",
-    "url": "scripts/cite-web-suduvosgidas.user.js"
+    "url": "scripts/cite-web-suduvosgidas.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "biciulis.net",
     "icon": "https://www.biciulis.net/favicon.ico",
-    "url": "scripts/cite-web-biciulis.user.js"
+    "url": "scripts/cite-web-biciulis.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "kaisiadoriuaidai.lt",
     "icon": "https://favicon.pub/kaisiadoriuaidai.lt",
-    "url": "scripts/cite-web-kaisiadoriuaidai.user.js"
+    "url": "scripts/cite-web-kaisiadoriuaidai.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "manoukis.lt",
     "icon": "https://www.manoukis.lt/favicon.ico",
-    "url": "scripts/cite-web-manoukis.user.js"
+    "url": "scripts/cite-web-manoukis.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "drg.lt",
     "icon": "https://www.drg.lt/templates/ja_good/favicon.ico",
-    "url": "scripts/cite-web-draugas.user.js"
+    "url": "scripts/cite-web-draugas.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "zmones.15min.lt",
     "icon": "",
-    "url": "scripts/cite-web-zmones.user.js"
+    "url": "scripts/cite-web-zmones.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "bernardinai.lt",
     "icon": "https://www.bernardinai.lt/favicon.ico",
-    "url": "scripts/cite-web-bernardinai.user.js"
+    "url": "scripts/cite-web-bernardinai.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "naujienos.vu.lt",
     "icon": "",
-    "url": "scripts/cite-web-vu.user.js"
+    "url": "scripts/cite-web-vu.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "vilnius.lt",
     "icon": "https://vilnius.lt/favicon.ico",
-    "url": "scripts/cite-web-vilnius.user.js"
+    "url": "scripts/cite-web-vilnius.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "kariuomene.lt",
     "icon": "https://kariuomene.lt/static/themes/site/img/favicon.ico",
-    "url": "scripts/cite-web-kariuomene.user.js"
+    "url": "scripts/cite-web-kariuomene.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "zemaitis.lt",
     "icon": "",
-    "url": "scripts/cite-web-zemaitis.user.js"
+    "url": "scripts/cite-web-zemaitis.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "anykstenai.lt",
     "icon": "",
-    "url": "scripts/cite-web-anykstenai.user.js"
+    "url": "scripts/cite-web-anykstenai.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "jonavoszinios.lt",
     "icon": "",
-    "url": "scripts/cite-web-jonavoszinios.user.js"
+    "url": "scripts/cite-web-jonavoszinios.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "skrastas.lt",
     "icon": "",
-    "url": "scripts/cite-web-skrastas.user.js"
+    "url": "scripts/cite-web-skrastas.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "anyksta.lt",
     "icon": "",
-    "url": "scripts/cite-web-anyksta.user.js"
+    "url": "scripts/cite-web-anyksta.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "tzinios.lt",
     "icon": "",
-    "url": "scripts/cite-web-tzinios.user.js"
+    "url": "scripts/cite-web-tzinios.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "darbs.lt",
     "icon": "",
-    "url": "scripts/cite-web-darbs.user.js"
+    "url": "scripts/cite-web-darbs.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "suvalkietis.lt",
     "icon": "",
-    "url": "scripts/cite-web-suvalkietis.user.js"
+    "url": "scripts/cite-web-suvalkietis.user.js",
+    "folder": "cite-web"
   },
   {
     "domain": "e-seimas.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
-    "url": "scripts/cite-act-eseimas.user.js"
+    "url": "scripts/cite-act-eseimas.user.js",
+    "folder": "cite-act"
   },
   {
     "domain": "e-tar.lt",
     "icon": "https://www.e-tar.lt/resources/img/favicon.ico",
-    "url": "scripts/cite-act-etar.user.js"
+    "url": "scripts/cite-act-etar.user.js",
+    "folder": "cite-act"
   }
 ]

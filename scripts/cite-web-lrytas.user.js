@@ -167,11 +167,12 @@ generate({
     }
     return raw;
   },
-  author: '.text-base text-black-custom',
+  author: '.text-base.text-black-custom.hover\\:underline',
   agency: '.article-source__description',
   publisher: '[[Lrytas]]',
   website: 'lrytas.lt',
-  refName: 'lrytas'
+  refName: 'lrytas',
+  delay: 1000
 });
 
 })();

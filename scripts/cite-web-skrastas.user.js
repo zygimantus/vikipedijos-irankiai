@@ -140,7 +140,7 @@ generate({
   title: '.title',
   date: '.node-created',
   dateFormat: d => d.split(' ')[0],
-  author: '.node-other-author-name',
+  author: '.node-author-name span a',
   publisher: '[[Skrastas]]',
   website: 'skrastas.lt',
   refName: 'skrastas'

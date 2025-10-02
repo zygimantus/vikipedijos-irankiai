@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        ALKAS.LT Citation Generator for Wikipedia
+// @name        KLAIPEDAASSUTAVIM.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from alkas.lt articles
-// @match       https://alkas.lt/*
-// @match       https://www.alkas.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from klaipedaassutavim.lt articles
+// @match       https://klaipedaassutavim.lt/*
+// @match       https://www.klaipedaassutavim.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.alkas.lt/favicon.ico
+// @icon        https://www.klaipedaassutavim.lt/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alkas.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-alkas.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-klaipedaassutavim.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-klaipedaassutavim.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -137,17 +137,15 @@ async function generate(config) {
 }
 
 generate({
-  title: '.jeg_post_title',
+  title: '.post-title.title-lg',
   date: () => {
     var _document$querySelect;
-    return (_document$querySelect = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+    return (_document$querySelect = document.querySelector('meta[name="date"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
   },
-  dateFormat: d => d.split('T')[0],
-  author: () => {
-    return document.querySelector('.wpb_text_column .wpb_wrapper').textContent.trim().split(',')[0];
-  },
-  website: 'alkas.lt',
-  refName: 'alkas'
+  dateFormat: d => d.split(' ')[0],
+  publisher: 'Klaipėda, aš su tavim',
+  website: 'klaipedaassutavim.lt',
+  refName: 'klaipedaassutavim'
 });
 
 })();

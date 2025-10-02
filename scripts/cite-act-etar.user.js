@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name        ETAR.LT Citation Generator for Wikipedia
+// @name        E-TAR.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite act}} references automatically from etar.lt articles
-// @match       https://etar.lt/*
-// @match       https://www.etar.lt/*
+// @description Generates Wikipedia {{cite act}} references automatically from e-tar.lt articles
+// @match       https://e-tar.lt/*
+// @match       https://www.e-tar.lt/*
 // @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.e-tar.lt/resources/img/favicon.ico
