@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name        E-SEIMAS.LT Citation Generator for Wikipedia
+// @name        E-SEIMAS.LRS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite act}} references automatically from e-seimas.lt articles
-// @match       https://e-seimas.lt/*
-// @match       https://www.e-seimas.lt/*
+// @description Generates Wikipedia {{cite act}} references automatically from e-seimas.lrs.lt articles
+// @match       https://e-seimas.lrs.lt/*
+// @match       https://www.e-seimas.lrs.lt/*
 // @version     1.0.0
 // @author      Zygimantus
 // @icon        https://e-seimas.lrs.lt/resources/img/favicon.ico

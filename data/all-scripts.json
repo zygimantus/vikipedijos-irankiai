@@ -6,6 +6,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "mle.lt",
+    "icon": "https://favicon.pub/mle.lt",
+    "url": "scripts/cite-web-mle.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "lrt.lt",
     "icon": "https://www.lrt.lt/favicon.ico",
     "url": "scripts/cite-web-lrt.user.js",
