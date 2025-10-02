@@ -100,6 +100,11 @@
     "url": "scripts/cite-web-vilniauskrastas.user.js"
   },
   {
+    "domain": "pajurionaujienos.com",
+    "icon": "https://www.pajurionaujienos.com/favicon.ico",
+    "url": "scripts/cite-web-pajurionaujienos.user.js"
+  },
+  {
     "domain": "voruta.lt",
     "icon": "https://www.voruta.lt/favicon.ico",
     "url": "scripts/cite-web-voruta.user.js"
