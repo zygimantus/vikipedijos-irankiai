@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name        ZEMAITIS.LT Citation Generator for Wikipedia
+// @name        ZEMAICIOLAIKRASTIS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from zemaitis.lt articles
-// @match       https://zemaitis.lt/*
-// @match       https://www.zemaitis.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from zemaiciolaikrastis.lt articles
+// @match       https://zemaiciolaikrastis.lt/*
+// @match       https://www.zemaiciolaikrastis.lt/*
 // @version     1.0.0
 // @author      Zygimantus
 // @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico

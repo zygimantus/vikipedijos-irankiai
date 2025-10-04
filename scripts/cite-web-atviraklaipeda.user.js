@@ -150,7 +150,6 @@ generate({
     var _document$querySelect3;
     return (_document$querySelect3 = document.querySelector('meta[name="author"]')) == null ? void 0 : _document$querySelect3.getAttribute('content');
   },
-  publisher: 'Atvira Klaipėda',
   website: 'atviraklaipeda.lt',
   refName: 'atviraklaipeda'
 });

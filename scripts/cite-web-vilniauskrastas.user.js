@@ -139,7 +139,6 @@ async function generate(config) {
 generate({
   title: '.jeg_post_title',
   date: '.jeg_meta_date a',
-  publisher: 'Vilniaus kraštas',
   website: 'vilniauskrastas.lt',
   refName: 'vilniauskrastas'
 });

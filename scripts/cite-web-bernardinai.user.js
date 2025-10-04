@@ -137,10 +137,10 @@ async function generate(config) {
 }
 
 generate({
-  title: '.article-title',
+  title: () => document.querySelector('meta[property="og:title"]').getAttribute('content'),
   date: '.article__details .date',
   dateFormat: raw => raw.replace(/\./g, '-').replace(/\s+/g, '-'),
-  author: '.article__details .author a',
+  author: () => document.querySelector('meta[name="author"]').getAttribute('content'),
   publisher: '[[Bernardinai.lt]]',
   website: 'bernardinai.lt',
   refName: 'bernardinai'

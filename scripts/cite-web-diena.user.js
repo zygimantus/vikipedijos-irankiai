@@ -143,7 +143,6 @@ generate({
   },
   date: '.publishing-date',
   dateFormat: d => d.split(' ')[0],
-  publisher: 'Diena.lt',
   website: 'diena.lt',
   refName: 'diena'
 });

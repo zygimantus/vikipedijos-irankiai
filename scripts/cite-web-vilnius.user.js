@@ -137,7 +137,7 @@ async function generate(config) {
 }
 
 generate({
-  title: '.text-3xl.md\\:text-4xl.md\\:leading-\\[2\\.75rem\\].font-poppins.font-semibold.tracking-wide.text-black-light.w-full',
+  title: () => document.querySelector('meta[property="og:title"]').getAttribute('content'),
   date: '.md\\:col-span-2 p',
   website: 'vilnius.lt',
   refName: 'vilnius'

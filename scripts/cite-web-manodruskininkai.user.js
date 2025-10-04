@@ -165,7 +165,6 @@ generate({
     }
     return raw;
   },
-  publisher: 'Mano Druskininkai',
   website: 'manodruskininkai.lt',
   refName: 'manodruskininkai'
 });
