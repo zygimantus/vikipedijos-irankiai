@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from ve.lt articles
 // @match       https://ve.lt/*
 // @match       https://www.ve.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://ve.lt/sites/default/files/favicon_0.ico
 // @run-at      document-end

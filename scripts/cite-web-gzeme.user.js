@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from gzeme.lt articles
 // @match       https://gzeme.lt/*
 // @match       https://www.gzeme.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.gzeme.lt/favicon.ico
 // @run-at      document-end

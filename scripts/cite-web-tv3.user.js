@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from tv3.lt articles
 // @match       https://tv3.lt/*
 // @match       https://www.tv3.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.tv3.lt/favicon.ico
 // @run-at      document-end

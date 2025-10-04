@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from veidas.lt articles
 // @match       http://veidas.lt/*
 // @match       http://www.veidas.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://favicon.pub/veidas.lt
 // @run-at      document-end

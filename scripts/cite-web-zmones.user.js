@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from zmones.15min.lt articles
 // @match       https://zmones.15min.lt/*
 // @match       https://www.zmones.15min.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end

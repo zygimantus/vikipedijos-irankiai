@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from biciulis.net articles
 // @match       https://biciulis.net/*
 // @match       https://www.biciulis.net/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.biciulis.net/favicon.ico
 // @run-at      document-end

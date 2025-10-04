@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from atviraklaipeda.lt articles
 // @match       https://atviraklaipeda.lt/*
 // @match       https://www.atviraklaipeda.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.atviraklaipeda.lt/wp-content/themes/atviraklaipeda/assets/favicon.png
 // @run-at      document-end

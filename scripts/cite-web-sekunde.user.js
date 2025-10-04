@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from sekunde.lt articles
 // @match       https://sekunde.lt/*
 // @match       https://www.sekunde.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.sekunde.lt/favicon.ico
 // @run-at      document-end

@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from lrt.lt articles
 // @match       https://lrt.lt/*
 // @match       https://www.lrt.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.lrt.lt/favicon.ico
 // @run-at      document-end

@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from visalietuva.lt articles
 // @match       https://visalietuva.lt/*
 // @match       https://www.visalietuva.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.visalietuva.lt/favicon.ico
 // @run-at      document-end

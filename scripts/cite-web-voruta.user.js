@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from voruta.lt articles
 // @match       https://voruta.lt/*
 // @match       https://www.voruta.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.voruta.lt/favicon.ico
 // @run-at      document-end

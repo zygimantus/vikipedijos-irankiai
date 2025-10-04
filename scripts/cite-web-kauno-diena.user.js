@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from kauno.diena.lt articles
 // @match       https://kauno.diena.lt/*
 // @match       https://www.kauno.diena.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://kauno.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/2/favicon-96x96.png
 // @run-at      document-end

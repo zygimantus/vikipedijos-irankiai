@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from mle.lt articles
 // @match       https://mle.lt/*
 // @match       https://www.mle.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://favicon.pub/mle.lt
 // @run-at      document-end

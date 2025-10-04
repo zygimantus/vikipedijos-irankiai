@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from alkas.lt articles
 // @match       https://alkas.lt/*
 // @match       https://www.alkas.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.alkas.lt/favicon.ico
 // @run-at      document-end

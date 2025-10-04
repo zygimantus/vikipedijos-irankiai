@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from manoukis.lt articles
 // @match       https://manoukis.lt/*
 // @match       https://www.manoukis.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.manoukis.lt/favicon.ico
 // @run-at      document-end

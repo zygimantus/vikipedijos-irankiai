@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from valstietis.lt articles
 // @match       https://valstietis.lt/*
 // @match       https://www.valstietis.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.valstietis.lt/favicon.ico
 // @run-at      document-end

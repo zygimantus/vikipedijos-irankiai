@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from lrytas.lt articles
 // @match       https://lrytas.lt/*
 // @match       https://www.lrytas.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.lrytas.lt/favicon.ico
 // @run-at      document-end

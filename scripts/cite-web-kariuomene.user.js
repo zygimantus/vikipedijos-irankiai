@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from kariuomene.lt articles
 // @match       https://kariuomene.lt/*
 // @match       https://www.kariuomene.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://kariuomene.lt/static/themes/site/img/favicon.ico
 // @run-at      document-end

@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from skrastas.lt articles
 // @match       https://skrastas.lt/*
 // @match       https://www.skrastas.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end

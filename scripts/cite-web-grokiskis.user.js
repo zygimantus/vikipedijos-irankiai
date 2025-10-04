@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from grokiskis.lt articles
 // @match       https://grokiskis.lt/*
 // @match       https://www.grokiskis.lt/*
-// @version     1.0.1
+// @version     1.0.0
 // @author      Zygimantus
 // @icon        https://www.grokiskis.lt/wp-content/uploads/2016/05/favicon.png
 // @run-at      document-end
