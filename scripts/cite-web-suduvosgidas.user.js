@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from suduvosgidas.lt articles
 // @match       https://suduvosgidas.lt/*
 // @match       https://www.suduvosgidas.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.suduvosgidas.lt/favicon.ico
 // @run-at      document-end

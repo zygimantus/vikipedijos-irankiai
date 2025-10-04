@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from pasvalioenciklopedija.lt articles
 // @match       https://pasvalioenciklopedija.lt/*
 // @match       https://www.pasvalioenciklopedija.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.pasvalioenciklopedija.lt/favicon.ico
 // @run-at      document-end

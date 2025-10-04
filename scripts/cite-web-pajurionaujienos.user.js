@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from pajurionaujienos.com articles
 // @match       https://pajurionaujienos.com/*
 // @match       https://www.pajurionaujienos.com/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.pajurionaujienos.com/favicon.ico
 // @run-at      document-end

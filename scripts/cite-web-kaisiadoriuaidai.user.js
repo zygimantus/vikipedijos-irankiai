@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from kaisiadoriuaidai.lt articles
 // @match       http://kaisiadoriuaidai.lt/*
 // @match       http://www.kaisiadoriuaidai.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://favicon.pub/kaisiadoriuaidai.lt
 // @run-at      document-end

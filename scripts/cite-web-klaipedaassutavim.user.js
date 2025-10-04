@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from klaipedaassutavim.lt articles
 // @match       https://klaipedaassutavim.lt/*
 // @match       https://www.klaipedaassutavim.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.klaipedaassutavim.lt/favicon.ico
 // @run-at      document-end

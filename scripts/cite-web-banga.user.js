@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from gargzdai.lt articles
 // @match       https://gargzdai.lt/*
 // @match       https://www.gargzdai.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.gargzdai.lt/favicon.ico
 // @run-at      document-end

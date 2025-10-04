@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite act}} references automatically from e-seimas.lrs.lt articles
 // @match       https://e-seimas.lrs.lt/*
 // @match       https://www.e-seimas.lrs.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://e-seimas.lrs.lt/resources/img/favicon.ico
 // @run-at      document-end

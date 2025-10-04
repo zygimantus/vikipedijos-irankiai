@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from laikrastisplunge.lt articles
 // @match       https://laikrastisplunge.lt/*
 // @match       https://www.laikrastisplunge.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png
 // @run-at      document-end

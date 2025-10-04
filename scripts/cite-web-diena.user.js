@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from diena.lt articles
 // @match       https://diena.lt/*
 // @match       https://www.diena.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/1/favicon.svg
 // @run-at      document-end

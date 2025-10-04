@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from zemaiciolaikrastis.lt articles
 // @match       https://zemaiciolaikrastis.lt/*
 // @match       https://www.zemaiciolaikrastis.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end

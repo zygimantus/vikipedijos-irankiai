@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from 15min.lt articles
 // @match       https://15min.lt/*
 // @match       https://www.15min.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.15min.lt/favicon.ico
 // @run-at      document-end

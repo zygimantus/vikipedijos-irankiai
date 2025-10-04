@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from vz.lt articles
 // @match       https://vz.lt/*
 // @match       https://www.vz.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.vz.lt/favicon-48x48.png
 // @run-at      document-end

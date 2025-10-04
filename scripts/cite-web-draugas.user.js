@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from drg.lt articles
 // @match       https://drg.lt/*
 // @match       https://www.drg.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.drg.lt/templates/ja_good/favicon.ico
 // @run-at      document-end

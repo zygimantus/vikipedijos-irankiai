@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite act}} references automatically from e-tar.lt articles
 // @match       https://e-tar.lt/*
 // @match       https://www.e-tar.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.e-tar.lt/resources/img/favicon.ico
 // @run-at      document-end

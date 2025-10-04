@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from tzinios.lt articles
 // @match       https://tzinios.lt/*
 // @match       https://www.tzinios.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end

@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from rekvizitai.vz.lt articles
 // @match       https://rekvizitai.vz.lt/*
 // @match       https://www.rekvizitai.vz.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://rekvizitai.vz.lt/images/favicon.ico
 // @run-at      document-end

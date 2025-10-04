@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from santarve.lt articles
 // @match       https://santarve.lt/*
 // @match       https://www.santarve.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.santarve.lt/favicon.ico
 // @run-at      document-end

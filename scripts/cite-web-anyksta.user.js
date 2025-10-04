@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from anyksta.lt articles
 // @match       https://anyksta.lt/*
 // @match       https://www.anyksta.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end

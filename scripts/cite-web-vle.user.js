@@ -4,7 +4,7 @@
 // @description Generates Wikipedia {{cite web}} references automatically from vle.lt articles
 // @match       https://vle.lt/*
 // @match       https://www.vle.lt/*
-// @version     1.0.0
+// @version     1.0.1
 // @author      Zygimantus
 // @icon        https://www.vle.lt/orig_contrast_vle-logo-extract.png
 // @run-at      document-end
