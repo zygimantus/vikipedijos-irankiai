@@ -1,4 +1,4 @@
-# Vikipedijos Įrankiai
+# Vikipedijos įrankiai
 
 Darbui su lietuviškąja Vikipedija skirti įrankiai.
 
