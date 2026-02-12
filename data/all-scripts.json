@@ -306,6 +306,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "sportas.lt",
+    "icon": "https://www.sportas.lt/pimg/Site/favicon_v1.ico",
+    "url": "scripts/cite-web-sportas.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "e-seimas.lrs.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-eseimas.user.js",
