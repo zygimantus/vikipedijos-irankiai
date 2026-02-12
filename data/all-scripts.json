@@ -48,6 +48,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "klaipeda.diena.lt",
+    "icon": "https://klaipeda.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/3/favicon.svg",
+    "url": "scripts/cite-web-klaipeda-diena.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "ve.lt",
     "icon": "https://ve.lt/sites/default/files/favicon_0.ico",
     "url": "scripts/cite-web-ve.user.js",
