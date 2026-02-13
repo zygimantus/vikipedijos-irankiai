@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        BERNARDINAI.LT Citation Generator for Wikipedia
+// @name        AINA.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from bernardinai.lt articles
-// @match       https://bernardinai.lt/*
-// @match       https://www.bernardinai.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from aina.lt articles
+// @match       https://aina.lt/*
+// @match       https://www.aina.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.bernardinai.lt/favicon.ico
+// @icon        https://www.aina.lt/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-bernardinai.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-bernardinai.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-aina.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-aina.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -137,13 +137,11 @@ async function generate(config) {
 }
 
 generate({
-  title: () => document.querySelector('meta[property="og:title"]').getAttribute('content'),
-  date: '.article__details .date',
-  dateFormat: raw => raw.split('|')[0].trim(),
-  author: () => document.querySelector('meta[name="author"]').getAttribute('content'),
-  publisher: '[[Bernardinai.lt]]',
-  website: 'bernardinai.lt',
-  refName: 'bernardinai'
+  title: '.TODO',
+  date: '.TODO',
+  publisher: '[[aina]]',
+  website: 'aina.lt',
+  refName: 'aina'
 });
 
 })();
