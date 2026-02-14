@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        KURSENAI.LT Citation Generator for Wikipedia
+// @name        BASKETNEWS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from kursenai.lt articles
-// @match       https://kursenai.lt/*
-// @match       https://www.kursenai.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from basketnews.lt articles
+// @match       https://basketnews.lt/*
+// @match       https://www.basketnews.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://kursenai.lt/wp-content/uploads/2021/02/kursenai-favicon.png
+// @icon        https://www.basketnews.lt/config/basketnews.lt/favicon/apple-touch-icon.png
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kursenai.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kursenai.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-basketnews.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-basketnews.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -137,18 +137,11 @@ async function generate(config) {
 }
 
 generate({
-  title: () => {
-    var _document$querySelect;
-    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
-  },
-  date: () => {
-    var _document$querySelect2;
-    return (_document$querySelect2 = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
-  },
-  dateFormat: raw => raw.split('T')[0],
-  author: () => document.querySelector('meta[name="author"]').getAttribute('content'),
-  website: 'kursenai.lt',
-  refName: 'kursenai'
+  title: '.TODO',
+  date: '.TODO',
+  publisher: '[[basketnews]]',
+  website: 'basketnews.lt',
+  refName: 'basketnews'
 });
 
 })();

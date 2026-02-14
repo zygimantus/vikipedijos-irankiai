@@ -342,6 +342,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "basketnews.lt",
+    "icon": "https://www.basketnews.lt/config/basketnews.lt/favicon/apple-touch-icon.png",
+    "url": "scripts/cite-web-basketnews.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "e-seimas.lrs.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-eseimas.user.js",
