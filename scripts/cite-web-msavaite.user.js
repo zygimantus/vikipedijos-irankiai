@@ -2,8 +2,8 @@
 // @name        MSAVAITE.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
 // @description Generates Wikipedia {{cite web}} references automatically from msavaite.lt articles
-// @match       https://msavaite.lt/*
-// @match       https://www.msavaite.lt/*
+// @match       http://msavaite.lt/*
+// @match       http://www.msavaite.lt/*
 // @version     1.0.0
 // @author      Zygimantus
 // @icon        http://www.msavaite.lt/wp-content/uploads/2020/02/MS-favicon.jpg
