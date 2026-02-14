@@ -324,6 +324,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "kursenai.lt",
+    "icon": "https://kursenai.lt/wp-content/uploads/2021/02/kursenai-favicon.png",
+    "url": "scripts/cite-web-kursenai.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "e-seimas.lrs.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-eseimas.user.js",
