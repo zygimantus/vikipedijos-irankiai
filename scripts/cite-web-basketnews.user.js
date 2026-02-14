@@ -142,6 +142,7 @@ generate({
     return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
   },
   date: '.date.times',
+  dateFormat: raw => raw.split(' ')[0],
   website: 'basketnews.lt',
   refName: 'basketnews'
 });
