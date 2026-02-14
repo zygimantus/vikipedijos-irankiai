@@ -6,7 +6,7 @@
 // @match       https://www.kaunas.kasvyksta.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.kaunas.kasvyksta.lt/favicon.ico
+// @icon        https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fkaunas.kasvyksta.lt%2Fimages%2F2026-01%2Fkvk-icon-top-menu-6977290992c46.svg@webp
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-kasvyksta.user.js
