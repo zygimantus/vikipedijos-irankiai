@@ -146,7 +146,7 @@ generate({
     return (_document$querySelect2 = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
   },
   dateFormat: raw => raw.split('T')[0],
-  publisher: '[[Respublika|Respublika (dienraštis)]]',
+  publisher: '[[Respublika (dienraštis)|Respublika]]',
   website: 'respublika.lt',
   refName: 'respublika'
 });
