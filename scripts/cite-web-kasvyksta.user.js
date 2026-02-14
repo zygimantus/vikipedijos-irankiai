@@ -137,9 +137,15 @@ async function generate(config) {
 }
 
 generate({
-  title: '.post_title_custom',
-  date: '.date',
-  dateFormat: raw => raw.split(' ')[0].replace(/\//g, '-'),
+  title: () => {
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+  },
+  date: () => {
+    var _document$querySelect2;
+    return (_document$querySelect2 = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
+  },
+  dateFormat: raw => raw.split('T')[0],
   website: 'kaunas.kasvyksta.lt',
   refName: 'kasvyksta'
 });
