@@ -354,6 +354,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "krepsinis.net",
+    "icon": "https://www.krepsinis.net/pimg/Site/new/favicon.ico?v=4.00.12",
+    "url": "scripts/cite-web-krepsinis.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "e-seimas.lrs.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-eseimas.user.js",
