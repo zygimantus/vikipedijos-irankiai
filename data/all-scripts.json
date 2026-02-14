@@ -360,6 +360,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "msavaite.lt",
+    "icon": "http://www.msavaite.lt/wp-content/uploads/2020/02/MS-favicon.jpg",
+    "url": "scripts/cite-web-msavaite.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "e-seimas.lrs.lt",
     "icon": "https://e-seimas.lrs.lt/resources/img/favicon.ico",
     "url": "scripts/cite-act-eseimas.user.js",
