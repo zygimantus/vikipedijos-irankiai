@@ -96,6 +96,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "info.lt",
+    "icon": "https://www.info.lt/favicon.ico",
+    "url": "scripts/cite-web-info.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "kaunas.kasvyksta.lt",
     "icon": "https://www.kaunas.kasvyksta.lt/favicon.ico",
     "url": "scripts/cite-web-kasvyksta.user.js",
