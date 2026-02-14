@@ -270,6 +270,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "madeinvilnius.lt",
+    "icon": "https://vilnius.lt/favicon.ico",
+    "url": "scripts/cite-web-madeinvilnius.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "kariuomene.lt",
     "icon": "https://kariuomene.lt/static/themes/site/img/favicon.ico",
     "url": "scripts/cite-web-kariuomene.user.js",
