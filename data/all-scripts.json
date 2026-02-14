@@ -271,7 +271,7 @@
   },
   {
     "domain": "madeinvilnius.lt",
-    "icon": "https://vilnius.lt/favicon.ico",
+    "icon": "https://madeinvilnius.lt/wp-content/uploads/2025/02/made-in-vilnius-icon-150x150.png",
     "url": "scripts/cite-web-madeinvilnius.user.js",
     "folder": "cite-web"
   },
