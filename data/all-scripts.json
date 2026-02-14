@@ -144,6 +144,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "respublika.lt",
+    "icon": "https://www.respublika.lt/favicon-192x192.png",
+    "url": "scripts/cite-web-respublika.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "voruta.lt",
     "icon": "https://www.voruta.lt/favicon.ico",
     "url": "scripts/cite-web-voruta.user.js",
