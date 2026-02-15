@@ -96,13 +96,16 @@ async function prepareCitation(config) {
     author = '';
   if (config.author) {
     const authorRaw = resolveSelectorOrValue(config.author);
-    if (config.forceAuthor) {
-      author = authorRaw;
-    } else if (authorRaw.length < 40) {
-      const parts = authorRaw.split(/\s+/);
-      if (parts.length > 1) {
-        first = parts.slice(0, -1).join(' ');
-        if (first.length < 3) first = '';else last = parts.slice(-1)[0];
+    if (typeof authorRaw !== 'string') ; else {
+      const a = authorRaw.trim();
+      if (!a) ; else if (config.forceAuthor) {
+        author = a;
+      } else if (a.length < 40) {
+        const parts = a.split(/\s+/);
+        if (parts.length > 1) {
+          first = parts.slice(0, -1).join(' ');
+          if (first.length < 3) first = '';else last = parts.slice(-1)[0];
+        }
       }
     }
   }
