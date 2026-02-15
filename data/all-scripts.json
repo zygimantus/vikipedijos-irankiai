@@ -1,5 +1,11 @@
 [
   {
+    "domain": "370.diena.lt",
+    "icon": "https://370.diena.lt/wp-content/uploads/2025/10/android-chrome-512x512-2.png",
+    "url": "scripts/cite-web-370.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "vle.lt",
     "icon": "https://www.vle.lt/orig_contrast_vle-logo-extract.png",
     "url": "scripts/cite-web-vle.user.js",
