@@ -171,8 +171,7 @@ generate({
   agency: '.article-source__description',
   publisher: '[[Lrytas]]',
   website: 'lrytas.lt',
-  refName: 'lrytas',
-  delay: 2000
+  refName: 'lrytas'
 });
 
 })();
