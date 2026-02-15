@@ -78,6 +78,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "pasauliolietuvis.lt",
+    "icon": "https://www.pasauliolietuvis.lt/favicon.ico",
+    "url": "scripts/cite-web-pasauliolietuvis.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "lrs.lt",
     "icon": "https://www.lrs.lt/SIPIS/portal/images/favicon.ico",
     "url": "scripts/cite-web-lrs.user.js",
