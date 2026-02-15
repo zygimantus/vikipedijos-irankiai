@@ -145,6 +145,7 @@ generate({
     return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
   },
   date: '.post-date',
+  dateFormat: raw => raw.split(' ')[0],
   publisher: '[[Pasaulio lietuvis]]',
   website: 'pasauliolietuvis.lt',
   refName: 'pasauliolietuvis'
