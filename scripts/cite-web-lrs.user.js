@@ -159,6 +159,7 @@ generate({
   date: () => {
     // Select the paragraph element
     const p = document.querySelector('p.MsoNoSpacing');
+    if (!p) return '';
 
     // Get its text content
     const text = p.textContent;
