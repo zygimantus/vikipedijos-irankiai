@@ -90,6 +90,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "kvr.kpd.lt",
+    "icon": "https://kvr.kpd.lt/favicon.ico",
+    "url": "scripts/cite-web-kvr.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "laikrastisplunge.lt",
     "icon": "https://laikrastisplunge.lt/wp-content/uploads/2021/08/logo_plunge-75x75.png",
     "url": "scripts/cite-web-plunge.user.js",
