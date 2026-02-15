@@ -149,7 +149,13 @@ generate({
     return (_document$querySelect2 = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
   },
   dateFormat: raw => raw.split('T')[0],
-  author: '.meta-author-url.meta-author',
+  author: () => {
+    var _document$querySelect3;
+    const author = (_document$querySelect3 = document.querySelector('.meta-author-url.meta-author')) == null || (_document$querySelect3 = _document$querySelect3.getAttribute('content')) == null ? void 0 : _document$querySelect3.trim();
+    if (!author) return null;
+    if (/vilnius/i.test(author)) return null;
+    return author;
+  },
   website: 'madeinvilnius.lt',
   refName: 'madeinvilnius'
 });
