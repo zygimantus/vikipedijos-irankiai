@@ -152,10 +152,7 @@ const months = {
 };
 
 generate({
-  title: () => {
-    var _document$querySelect;
-    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
-  },
+  title: '.mainPavad',
   date: '.autoriusSocial div:nth-child(2)',
   dateFormat: raw => {
     const clean = raw.replace(',', '').replace('m.', '').toLowerCase();
