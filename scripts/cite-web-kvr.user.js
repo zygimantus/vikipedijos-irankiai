@@ -140,7 +140,7 @@ async function generate(config) {
 }
 
 generate({
-  title: '.ng-binding',
+  title: '#mainDiv .ng-binding',
   publisher: '[[Kultūros vertybių registras]]',
   website: 'kvr.kpd.lt',
   refName: 'kvr'
