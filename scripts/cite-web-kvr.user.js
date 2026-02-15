@@ -143,7 +143,8 @@ generate({
   title: '#mainDiv .ng-binding',
   publisher: '[[Kultūros vertybių registras]]',
   website: 'kvr.kpd.lt',
-  refName: 'kvr'
+  refName: 'kvr',
+  delay: 1500
 });
 
 })();
