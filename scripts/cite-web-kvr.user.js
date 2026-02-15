@@ -140,11 +140,10 @@ async function generate(config) {
 }
 
 generate({
-  title: '#mainDiv .ng-binding',
+  title: '.small-12.column > .ng-binding',
   publisher: '[[Kultūros vertybių registras]]',
   website: 'kvr.kpd.lt',
-  refName: 'kvr',
-  delay: 1500
+  refName: 'kvr'
 });
 
 })();
