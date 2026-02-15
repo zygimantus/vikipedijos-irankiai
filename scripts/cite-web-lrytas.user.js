@@ -172,7 +172,7 @@ generate({
   publisher: '[[Lrytas]]',
   website: 'lrytas.lt',
   refName: 'lrytas',
-  delay: 1000
+  delay: 2000
 });
 
 })();
