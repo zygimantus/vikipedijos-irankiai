@@ -146,7 +146,7 @@ generate({
   },
   date: () => {
     var _document$querySelect2;
-    return (_document$querySelect2 = document.querySelector('meta[property="article:publish_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
+    return (_document$querySelect2 = document.querySelector('meta[property="publish_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
   },
   dateFormat: raw => raw.split(' ')[0],
   website: 'sportas.lt',
