@@ -143,7 +143,13 @@ generate({
   title: '.article-title-1100',
   date: '.source-info',
   dateFormat: d => d.split(' ')[0],
-  author: '.desktop-author',
+  author: () => {
+    var _document$querySelect;
+    const author = (_document$querySelect = document.querySelector('.desktop-author')) == null || (_document$querySelect = _document$querySelect.getAttribute('content')) == null ? void 0 : _document$querySelect.trim();
+    if (!author) return null;
+    if (/tv3/i.test(author)) return null;
+    return author;
+  },
   publisher: '[[TV3]]',
   website: 'tv3.lt',
   refName: 'tv3'
