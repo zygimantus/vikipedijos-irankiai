@@ -143,7 +143,13 @@ generate({
   title: '#page-title span',
   date: '.publishing-date',
   dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: '.publishing-author a',
+  author: () => {
+    var _document$querySelect;
+    const author = (_document$querySelect = document.querySelector('.publishing-author a')) == null || (_document$querySelect = _document$querySelect.getAttribute('content')) == null ? void 0 : _document$querySelect.trim();
+    if (!author) return null;
+    if (/bns/i.test(author)) return null;
+    return author;
+  },
   publisher: '[[Kauno diena]]',
   website: 'kauno.diena.lt',
   refName: 'kaunodiena'
