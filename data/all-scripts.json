@@ -42,6 +42,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "sc.bns.lt",
+    "icon": "https://sc.bns.lt/favicon.ico?v=1",
+    "url": "scripts/cite-web-bns.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "kauno.diena.lt",
     "icon": "https://kauno.diena.lt/themes/custom/dienalt-custom-theme/build/assets/icons/favicons/2/favicon-96x96.png",
     "url": "scripts/cite-web-kauno-diena.user.js",
