@@ -142,7 +142,9 @@ async function generate(config) {
 generate({
   title: () => {
     var _document$querySelect;
-    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+    const t = (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null || (_document$querySelect = _document$querySelect.getAttribute('content')) == null ? void 0 : _document$querySelect.trim();
+    if (!t) return '';
+    return t.replace(/\s*\|\s*Krepsinis\.net\s*$/i, '');
   },
   date: () => {
     var _document$querySelect2;
