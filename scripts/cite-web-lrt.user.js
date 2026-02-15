@@ -143,13 +143,7 @@ generate({
   title: '.title-block__heading',
   date: '.avatar-group__description span:nth-child(2)',
   dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
-  author: () => {
-    var _document$querySelect;
-    const author = (_document$querySelect = document.querySelector('meta[property="author"]')) == null || (_document$querySelect = _document$querySelect.getAttribute('content')) == null ? void 0 : _document$querySelect.trim();
-    if (!author) return null;
-    if (/lrt/i.test(author)) return null;
-    return author;
-  },
+  author: '.avatar-group__description > span > a',
   agency: '.article-source__description',
   publisher: '[[LRT]]',
   website: 'lrt.lt',
