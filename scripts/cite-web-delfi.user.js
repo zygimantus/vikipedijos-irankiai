@@ -142,7 +142,10 @@ generate({
   dateFormat: raw => raw.split(/\s+/)[0].replace(/\./g, '-'),
   author: () => {
     var _document$querySelect;
-    return (_document$querySelect = document.querySelector('meta[name="cXenseParse:author"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
+    const author = (_document$querySelect = document.querySelector('meta[name="cXenseParse:author"]')) == null || (_document$querySelect = _document$querySelect.getAttribute('content')) == null ? void 0 : _document$querySelect.trim();
+    if (!author) return null;
+    if (/delfi/i.test(author)) return null;
+    return author;
   },
   agency: '.article-source__description',
   publisher: '[[Delfi]]',
