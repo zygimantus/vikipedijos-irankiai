@@ -145,7 +145,7 @@ generate({
     return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
   },
   date: () => {
-    const el = document.querySelector('updated');
+    const el = document.querySelector('.updated');
     return el == null ? void 0 : el.getAttribute('datetime').split('T')[0];
   },
   publisher: '370',
