@@ -140,13 +140,10 @@ async function generate(config) {
 }
 
 generate({
-  title: () => {
-    var _document$querySelect;
-    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
-  },
+  title: '.cont_title > h1 > span',
   date: () => {
-    var _document$querySelect2;
-    return (_document$querySelect2 = document.querySelector('meta[property="publish_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="publish_time"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
   },
   dateFormat: raw => raw.split(' ')[0],
   website: 'sportas.lt',
