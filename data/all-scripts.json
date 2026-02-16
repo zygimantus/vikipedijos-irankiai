@@ -259,7 +259,7 @@
   },
   {
     "domain": "taurageszinios.lt",
-    "icon": "https://www.taurageszinios.lt/favicon.ico",
+    "icon": "https://taurageszinios.lt/images/favicon.png",
     "url": "scripts/cite-web-taurageszinios.user.js",
     "folder": "cite-web"
   },

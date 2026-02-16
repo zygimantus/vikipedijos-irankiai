@@ -6,7 +6,7 @@
 // @match       https://www.taurageszinios.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.taurageszinios.lt/favicon.ico
+// @icon        https://taurageszinios.lt/images/favicon.png
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-taurageszinios.user.js
@@ -139,10 +139,40 @@ async function generate(config) {
   }
 }
 
+const months = {
+  'sausio': '01',
+  'vasario': '02',
+  'kovo': '03',
+  'balandžio': '04',
+  'gegužės': '05',
+  'birželio': '06',
+  'liepos': '07',
+  'rugpjūčio': '08',
+  'rugsėjo': '09',
+  'spalio': '10',
+  'lapkričio': '11',
+  'gruodžio': '12'
+};
+
 generate({
-  title: '.TODO',
-  date: '.TODO',
-  publisher: '[[taurageszinios]]',
+  title: '.title-semibold-dark.size-c30',
+  date: () => {
+    const li = document.querySelector('ul.post-info-dark.mb-30 li:nth-child(2)');
+    if (!li) return '';
+    const text = li.textContent.replace(/\s+/g, ' ').trim();
+
+    // Matches: "Rugsėjo 3, 2022"
+    const dateRegex = /(\w+)\s+(\d{1,2}),\s*(\d{4})/i;
+    const match = text.match(dateRegex);
+    if (!match) return '';
+    const monthName = match[1].toLowerCase();
+    const day = match[2].padStart(2, '0');
+    const year = match[3];
+    const monthNumber = months[monthName] || '??';
+    return `${year}-${monthNumber}-${day}`;
+  },
+  author: '.post-info-dark.mb-30 > li > a',
+  publisher: '„Tauragės žinios“',
   website: 'taurageszinios.lt',
   refName: 'taurageszinios'
 });
