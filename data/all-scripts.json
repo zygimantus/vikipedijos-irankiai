@@ -222,6 +222,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "jurbarkosviesa.lt",
+    "icon": "https://www.jurbarkosviesa.lt/favicon.ico",
+    "url": "scripts/cite-web-jurbarkosviesa.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "alkas.lt",
     "icon": "https://www.alkas.lt/favicon.ico",
     "url": "scripts/cite-web-alkas.user.js",
