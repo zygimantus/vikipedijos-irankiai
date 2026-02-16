@@ -258,6 +258,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "lietuve.lt",
+    "icon": "https://lietuve.lt/vietafotkems/2018/12/zurnalas_lietuve_logo@2x-70x70.png",
+    "url": "scripts/cite-web-lietuve.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "sekunde.lt",
     "icon": "https://www.sekunde.lt/favicon.ico",
     "url": "scripts/cite-web-sekunde.user.js",

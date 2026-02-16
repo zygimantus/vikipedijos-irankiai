@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        UKZINIOS.LT Citation Generator for Wikipedia
+// @name        LIETUVE.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from ukzinios.lt articles
-// @match       https://ukzinios.lt/*
-// @match       https://www.ukzinios.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from lietuve.lt articles
+// @match       https://lietuve.lt/*
+// @match       https://www.lietuve.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.ukzinios.lt/wp-content/uploads/2024/05/favuk.png
+// @icon        https://lietuve.lt/vietafotkems/2018/12/zurnalas_lietuve_logo@2x-70x70.png
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-ukzinios.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-ukzinios.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lietuve.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lietuve.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -149,9 +149,9 @@ generate({
     return (_document$querySelect2 = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
   },
   dateFormat: d => d.split('T')[0],
-  publisher: '[[Ukmergės žinios]]',
-  website: 'ukzinios.lt',
-  refName: 'ukzinios'
+  publisher: '„Lietuvė“',
+  website: 'lietuve.lt',
+  refName: 'lietuve'
 });
 
 })();
