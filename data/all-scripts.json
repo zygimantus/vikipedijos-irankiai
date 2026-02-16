@@ -216,6 +216,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "kurjeris.lt",
+    "icon": "https://www.kurjeris.lt/favicon.ico",
+    "url": "scripts/cite-web-kurjeris.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "pasvalioenciklopedija.lt",
     "icon": "https://www.pasvalioenciklopedija.lt/favicon.ico",
     "url": "scripts/cite-web-pasvalioenciklopedija.user.js",
