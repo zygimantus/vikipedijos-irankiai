@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        JURBARKOSVIESA.LT Citation Generator for Wikipedia
+// @name        UKZINIOS.LT Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from jurbarkosviesa.lt articles
-// @match       https://jurbarkosviesa.lt/*
-// @match       https://www.jurbarkosviesa.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from ukzinios.lt articles
+// @match       https://ukzinios.lt/*
+// @match       https://www.ukzinios.lt/*
 // @version     1.0.0
 // @author      Zygimantus
 // @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-jurbarkosviesa.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-jurbarkosviesa.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-ukzinios.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-ukzinios.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -149,9 +149,9 @@ generate({
     return (_document$querySelect2 = document.querySelector('meta[property="article:published_time"]')) == null ? void 0 : _document$querySelect2.getAttribute('content');
   },
   dateFormat: d => d.split('T')[0],
-  publisher: '[[Šviesa_(Jurbarkas)|Šviesa]]',
-  website: 'jurbarkosviesa.lt',
-  refName: 'jurbarkosviesa'
+  publisher: '[[Ukmergės žinios]]',
+  website: 'ukzinios.lt',
+  refName: 'ukzinios'
 });
 
 })();

@@ -223,7 +223,7 @@
   },
   {
     "domain": "jurbarkosviesa.lt",
-    "icon": "https://www.jurbarkosviesa.lt/favicon.ico",
+    "icon": "https://jurbarkosviesa.lt/wp-content/uploads/2022/11/logo-sviesa-300x76.jpeg",
     "url": "scripts/cite-web-jurbarkosviesa.user.js",
     "folder": "cite-web"
   },
@@ -231,6 +231,12 @@
     "domain": "alkas.lt",
     "icon": "https://www.alkas.lt/favicon.ico",
     "url": "scripts/cite-web-alkas.user.js",
+    "folder": "cite-web"
+  },
+  {
+    "domain": "ukzinios.lt",
+    "icon": "https://www.ukzinios.lt/wp-content/uploads/2024/05/favuk.png",
+    "url": "scripts/cite-web-ukzinios.user.js",
     "folder": "cite-web"
   },
   {
