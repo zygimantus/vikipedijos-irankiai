@@ -6,7 +6,7 @@
 // @match       https://www.vilnius.lt/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://zygimantus.github.io/vikipedijos-irankiai/favicon/favicon.ico
+// @icon        https://vilnius.lt/icon.ico?9e2db347c5957a12
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-vilnius.user.js

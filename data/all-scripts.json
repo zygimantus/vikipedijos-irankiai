@@ -289,7 +289,7 @@
   },
   {
     "domain": "vilnius.lt",
-    "icon": "https://vilnius.lt/favicon.ico",
+    "icon": "https://vilnius.lt/icon.ico?9e2db347c5957a12",
     "url": "scripts/cite-web-vilnius.user.js",
     "folder": "cite-web"
   },
