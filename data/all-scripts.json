@@ -84,6 +84,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "welovelithuania.com",
+    "icon": "https://www.welovelithuania.com/favicon.ico",
+    "url": "scripts/cite-web-welovelithuania.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "lrs.lt",
     "icon": "https://www.lrs.lt/SIPIS/portal/images/favicon.ico",
     "url": "scripts/cite-web-lrs.user.js",
