@@ -140,18 +140,18 @@ async function generate(config) {
 }
 
 const months = {
-  'sausio': '01',
-  'vasario': '02',
-  'kovo': '03',
-  'balandžio': '04',
-  'gegužės': '05',
-  'birželio': '06',
-  'liepos': '07',
-  'rugpjūčio': '08',
-  'rugsėjo': '09',
-  'spalio': '10',
-  'lapkričio': '11',
-  'gruodžio': '12'
+  sausio: '01',
+  vasario: '02',
+  kovo: '03',
+  balandžio: '04',
+  gegužės: '05',
+  birželio: '06',
+  liepos: '07',
+  rugpjūčio: '08',
+  rugsėjo: '09',
+  spalio: '10',
+  lapkričio: '11',
+  gruodžio: '12'
 };
 
 generate({

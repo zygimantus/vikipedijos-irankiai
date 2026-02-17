@@ -246,6 +246,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "kalvotoji.lt",
+    "icon": "https://www.kalvotoji.lt/favicon.ico",
+    "url": "scripts/cite-web-kalvotoji.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "ukzinios.lt",
     "icon": "https://www.ukzinios.lt/wp-content/uploads/2024/05/favuk.png",
     "url": "scripts/cite-web-ukzinios.user.js",
