@@ -149,10 +149,33 @@ async function generate(config) {
 }
 
 generate({
-  title: '.TODO',
-  date: '.TODO',
-  publisher: '[[archive-org]]',
-  website: 'web.archive.org',
+  url: "URL",
+  title: () => {
+    return 'TITLE';
+  },
+  archive: true,
+  archiveUrl: window.location.href,
+  archiveDate: () => {
+    const day = document.querySelector('#displayDayEl').textContent.trim();
+    const monthStr = document.querySelector('#displayMonthEl').textContent.trim();
+    const year = document.querySelector('#displayYearEl').textContent.trim();
+    const monthNames = {
+      Jan: '01',
+      Feb: '02',
+      Mar: '03',
+      Apr: '04',
+      May: '05',
+      Jun: '06',
+      Jul: '07',
+      Aug: '08',
+      Sep: '09',
+      Oct: '10',
+      Nov: '11',
+      Dec: '12'
+    };
+    const month = monthNames[monthStr];
+    return `${year}-${month}-${day.padStart(2, '0')}`;
+  },
   refName: 'archive-org'
 });
 
