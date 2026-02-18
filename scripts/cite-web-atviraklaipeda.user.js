@@ -50,6 +50,8 @@ async function generateCiteWeb(data) {
     website: data.website,
     publisher: data.publisher,
     'access-date': accessDate,
+    'archive-url': data.archiveUrl,
+    'archive-date': data.archiveDate,
     language: data.language
   };
   for (const [key, value] of Object.entries(fields)) {
@@ -83,7 +85,12 @@ function normalizeAgency(agency) {
 }
 
 async function prepareCitation(config) {
-  const url = window.location.href;
+  let url;
+  if (!config.archive) {
+    url = window.location.href;
+  } else {
+    url = resolveSelectorOrValue(config.url);
+  }
   const title = resolveSelectorOrValue(config.title);
   let date = '';
   if (config.date) {
@@ -121,6 +128,8 @@ async function prepareCitation(config) {
     origDate,
     publisher: config.publisher ? getValue(config.publisher) : '',
     website: config.website ? getValue(config.website) : '',
+    archiveDate: config.archive ? getValue(config.archiveDate) : '',
+    archiveUrl: config.archive ? getValue(config.archiveUrl) : '',
     refName: getValue(config.refName),
     language: config.language ? getValue(config.language) : ''
   };

@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name        WEB.ARCHIVE.ORG Citation Generator for Wikipedia
+// @name        ARCHIVE.PH Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from web.archive.org articles
-// @match       https://web.archive.org/*
-// @match       https://www.web.archive.org/*
+// @description Generates Wikipedia {{cite web}} references automatically from archive.ph articles
+// @match       https://archive.ph/*
+// @match       https://www.archive.ph/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://web-static.archive.org/_static/images/archive.ico
+// @icon        https://www.archive.ph/favicon.ico
 // @run-at      document-end
 // @noframes    
 // @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-archive.user.js

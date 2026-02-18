@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name        LRS.LT Citation Generator for Wikipedia
+// @name        WEB.ARCHIVE.ORG Citation Generator for Wikipedia
 // @namespace   https://github.com/zygimantus/vikipedijos-irankiai
-// @description Generates Wikipedia {{cite web}} references automatically from lrs.lt articles
-// @match       https://lrs.lt/*
-// @match       https://www.lrs.lt/*
+// @description Generates Wikipedia {{cite web}} references automatically from web.archive.org articles
+// @match       https://web.archive.org/*
+// @match       https://www.web.archive.org/*
 // @version     1.0.0
 // @author      Zygimantus
-// @icon        https://www.lrs.lt/SIPIS/portal/images/favicon.ico
+// @icon        https://web-static.archive.org/_static/images/archive.ico
 // @run-at      document-end
 // @noframes    
-// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrs.user.js
-// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-lrs.user.js
+// @downloadURL https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-archive-org.user.js
+// @updateURL   https://zygimantus.github.io/vikipedijos-irankiai/scripts/cite-web-archive-org.user.js
 // @supportURL  https://github.com/zygimantus/vikipedijos-irankiai/issues
 // @homepageURL https://github.com/zygimantus/vikipedijos-irankiai
 // @license     MIT
@@ -148,47 +148,12 @@ async function generate(config) {
   }
 }
 
-const months = {
-  sausio: '01',
-  vasario: '02',
-  kovo: '03',
-  balandžio: '04',
-  gegužės: '05',
-  birželio: '06',
-  liepos: '07',
-  rugpjūčio: '08',
-  rugsėjo: '09',
-  spalio: '10',
-  lapkričio: '11',
-  gruodžio: '12'
-};
-
 generate({
-  title: '#document-text-container1 h3',
-  date: () => {
-    // Select the paragraph element
-    const p = document.querySelector('p.MsoNoSpacing');
-    if (!p) return '';
-
-    // Get its text content
-    const text = p.textContent;
-
-    // Regex to match the date pattern: "2024 m. liepos 11 d."
-    const dateRegex = /(\d{4})\s*m\.\s*(\w+)\s*(\d{1,2})\s*d\./i;
-    const match = text.match(dateRegex);
-    if (match) {
-      const year = match[1];
-      const monthName = match[2].toLowerCase();
-      const day = match[3];
-      const monthNumber = months[monthName] || '??';
-      const formattedDate = `${year}-${monthNumber}-${day}`;
-      return formattedDate; // Output: "2024-07-11"
-    }
-    return '';
-  },
-  publisher: '[[LR Seimas]]',
-  website: 'lrs.lt',
-  refName: 'lrs'
+  title: '.TODO',
+  date: '.TODO',
+  publisher: '[[archive-org]]',
+  website: 'web.archive.org',
+  refName: 'archive-org'
 });
 
 })();

@@ -6,9 +6,15 @@
     "folder": "cite-web"
   },
   {
+    "domain": "archive.ph",
+    "icon": "https://www.archive.ph/favicon.ico",
+    "url": "scripts/cite-web-archive.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "web.archive.org",
     "icon": "https://web-static.archive.org/_static/images/archive.ico",
-    "url": "scripts/cite-web-archive.user.js",
+    "url": "scripts/cite-web-archive-org.user.js",
     "folder": "cite-web"
   },
   {
