@@ -155,13 +155,14 @@ generate({
   title: () => {
     return 'TITLE';
   },
+  archive: true,
   archiveUrl: window.location.href,
   archiveDate: () => {
     const dateStr = document.querySelector('#HEADER tbody tr td:nth-child(4) time').textContent;
     const dateObj = new Date(dateStr);
     return dateObj.toISOString().split('T')[0];
   },
-  refName: 'archive'
+  refName: 'archive.ph'
 });
 
 })();
