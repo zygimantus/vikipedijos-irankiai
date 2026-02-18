@@ -6,6 +6,12 @@
     "folder": "cite-web"
   },
   {
+    "domain": "web.archive.org",
+    "icon": "https://web-static.archive.org/_static/images/archive.ico",
+    "url": "scripts/cite-web-archive.user.js",
+    "folder": "cite-web"
+  },
+  {
     "domain": "vle.lt",
     "icon": "https://www.vle.lt/orig_contrast_vle-logo-extract.png",
     "url": "scripts/cite-web-vle.user.js",
