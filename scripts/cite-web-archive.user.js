@@ -161,7 +161,6 @@ generate({
     const dateObj = new Date(dateStr);
     return dateObj.toISOString().split('T')[0];
   },
-  website: 'archive.ph',
   refName: 'archive'
 });
 
