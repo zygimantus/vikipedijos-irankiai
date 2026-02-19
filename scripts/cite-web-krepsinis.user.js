@@ -49,7 +49,7 @@ async function generateCiteWeb(data) {
     'orig-date': data.origDate && data.origDate !== data.date ? data.origDate : undefined,
     website: data.website,
     publisher: data.publisher,
-    'access-date': accessDate,
+    'access-date': data.archiveDate != undefined ? accessDate : undefined,
     'archive-url': data.archiveUrl,
     'archive-date': data.archiveDate,
     language: data.language
