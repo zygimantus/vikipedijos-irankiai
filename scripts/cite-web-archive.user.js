@@ -153,7 +153,8 @@ generate({
     return document.querySelector('#HEADER tbody tr td:nth-child(3) form table tbody tr td input').value;
   },
   title: () => {
-    return 'TITLE';
+    var _document$querySelect;
+    return (_document$querySelect = document.querySelector('meta[property="og:title"]')) == null ? void 0 : _document$querySelect.getAttribute('content');
   },
   archive: true,
   archiveUrl: window.location.href,
