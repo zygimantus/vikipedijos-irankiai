@@ -160,7 +160,10 @@ generate({
   dateFormat: raw => raw.split('T')[0],
   author: () => {
     var _document$querySelect3;
-    return (_document$querySelect3 = document.querySelector('meta[name="author"]')) == null ? void 0 : _document$querySelect3.getAttribute('content');
+    const author = (_document$querySelect3 = document.querySelector('meta[name="author"]')) == null ? void 0 : _document$querySelect3.getAttribute('content');
+    if (!author) return null;
+    if (/atvira/i.test(author)) return null;
+    return author;
   },
   website: 'atviraklaipeda.lt',
   refName: 'atviraklaipeda'
