@@ -128,7 +128,7 @@ async function prepareCitation(config) {
     origDate,
     publisher: config.publisher ? getValue(config.publisher) : '',
     website: config.website ? getValue(config.website) : '',
-    archiveDate: config.archive ? getValue(config.archiveDate) : '',
+    archiveDate: config.archive ? getValue(config.archiveDate) : undefined,
     archiveUrl: config.archive ? getValue(config.archiveUrl) : '',
     refName: getValue(config.refName),
     language: config.language ? getValue(config.language) : ''
